@@ -5,8 +5,104 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <h1 class="main-header__title">PINK</h1>
+        <div class="main-header__mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <div class="top-picture">
+      <img src="http://placehold.it/320x400" alt="phone"/>
+    </div>
+    <section class="download">
+      <div class="download__wrapper">
+        <h2 class="download__title visually-hidden">Скачать приложение.</h2>
+        <a class="download__btn" href="#">Скачать приложение</a>
+        <div class="download__socials">
+          <a class="download__social download__social--ios" href="#">ios</a>
+          <a class="download__social download__social--android" href="#">android</a>
+          <a class="download__social download__social--windows" href="#">windows</a>
+        </div>
+        <p class="download__text">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </section>
+    <section class="description">
+      <div class="description__wrapper">
+        <h2 class="description__title">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
+        <ul class="description__items">
+          <li classs="description__item">
+            <b>Поднимает настроение</b>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li classs="description__item">
+            <b>Меняет мир вокруг</b>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li classs="description__item">
+            <b>Заводит новых друзей</b>
+            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="description__picture" src="http://placehold.it/160x275" alt="phone"/>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="reviews__title visually-hidden">Отзывы</h2>
+        <ul class="reviews__items">
+          <li class="reviews__item slider__item">
+            <b>Николай Петров</b>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+        </ul>
+        <input class="slider__input" type="radio" name="reviews" checked>
+        <input class="slider__input" type="radio" name="reviews">
+        <input class="slider__input" type="radio" name="reviews">
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__wrapper slider">
+        <h2 class="price__title visually-hidden">Стандарт</h2>
+        <div class="price__items">
+          <div class="price__item-top">
+            <span class="price__hit">ХИТ</span>
+            <b>Стандарт</b>
+            <p>3,99 USD</p>
+          </div>
+          <div class="price__item-bottom">
+            <ul>
+              <li class="price__item">розовый фильтр</li>
+              <li class="price__item">смайлики</li>
+              <li class="price__item">комментарии</li>
+            </ul>
+          </div>
+        </div>
+        <input class="slider__input" type="radio" name="price">
+        <input class="slider__input" type="radio" name="price" checked>
+        <input class="slider__input" type="radio" name="price">
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <h2 class="main-footer__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <p class="main-footer__contacts">
+          <b>Звоните:</b>
+          <span>+7(812)555-66-66</span>
+          <b>Пишите:</b>
+          <span>mail@htmlacademy.ru</span>
+          <b>Приезжайте в гости:</b>
+          <span>ул.Большая Конбшкнная, 19/8</span>
+        </p>
+        <div class="main-footer__map">
+          <img class="description__picture" src="http://placehold.it/320x200" alt="map"/>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
