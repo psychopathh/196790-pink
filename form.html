@@ -9,7 +9,7 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="#"><img src="http://placehold.it/90x35" alt="Логотип"></a>
       <div class="main-header__menu">
-        <a class="main-header__button" href="#" src="http://placehold.it/90x35" alt="меню"></a>
+        <a class="main-header__button" href="#"><img src="http://placehold.it/90x35" alt="меню"></a>
       </div>
     </div>
     <div class="main-header__info">
@@ -18,11 +18,11 @@
       </h1>
     </div>
   </header>
-  <section class="registration">
-    <div class="registration__wrapper">
-      <h2 class="registration__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
-      <form class="registration__form">
-        <fieldset>
+  <div class="registration-wrapper">
+    <h2 class="registration__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
+    <form class="form">
+      <fieldset class="form-info">
+        <div class="form-info__wrapper">
 
           <label for="surname">Фамилия</label>
           <input class="registration__input" type="text" id="surname" placeholder="Укажите фамилию *">
@@ -33,88 +33,81 @@
           <label for="patronymic">Фамилия</label>
           <input class="registration__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
 
-        </fieldset>
-      </form>
-    </div>
-  </section>
-  <section class="achievements">
-    <div class="achievements__wrapper">
-      <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
-      <form class="achievements__form">
+        </div>
+      </fieldset>
+      <fieldset class="achievments">
+        <div class="achievments__wrapper">
+          <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
 
-        <input class="achievements__input" type="checkbox" id="shark" checked>
-        <label for="shark">Сделал селфи с акулой</label>
+          <input class="achievements__input" type="checkbox" id="shark" checked>
+          <label for="shark">Сделал селфи с акулой</label>
 
-        <input class="achievements__input" type="checkbox" id="burn" checked>
-        <label for="burn">Обгорел на пляже</label>
+          <input class="achievements__input" type="checkbox" id="burn" checked>
+          <label for="burn">Обгорел на пляже</label>
 
-        <input class="achievements__input" type="checkbox" id="chack">
-        <label for="chack">Видел чака норриса</label>
+          <input class="achievements__input" type="checkbox" id="chack">
+          <label for="chack">Видел чака норриса</label>
 
-        <input class="achievements__input" type="checkbox" id="souvenir">
-        <label for="souvenir">Накупил сувениров</label>
+          <input class="achievements__input" type="checkbox" id="souvenir">
+          <label for="souvenir">Накупил сувениров</label>
 
-        <input class="achievements__input" type="checkbox" id="tower" checked>
-        <label for="tower">Удержал башню</label>
+          <input class="achievements__input" type="checkbox" id="tower" checked>
+          <label for="tower">Удержал башню</label>
 
-        <input class="achievements__input" type="checkbox" id="hotel">
-        <label for="hotel">Разгромил отель</label>
+          <input class="achievements__input" type="checkbox" id="hotel">
+          <label for="hotel">Разгромил отель</label>
+        </div>
+      </fieldset>
+      <fieldset class="contact">
+        <div class="contact__wrapper">
 
-      </form>
-    </div>
-  </section>
-  <section class="registrationtwo">
-    <div class="registrationtwo__wrapper">
-      <form class="registrationtwo__form">
-        <h2 class="registrationtwo__title visually-hidden">Номер телефона</h2>
+          <label for="number">Номер телефона</label>
+          <input class="contact__input" type="text" id="number" placeholder="Номер, пожалуйста">
 
-        <label for="number">Номер телефона</label>
-        <input class="registrationtwo__input" type="text" id="number" placeholder="Номер, пожалуйста">
+          <label for="mail">Адресок почты</label>
+          <input class="contact__input" type="text" id="mail" placeholder="Введите почту *">
 
-        <label for="mail">Адресок почты</label>
-        <input class="registrationtwo__input" type="text" id="mail" placeholder="Введите почту *">
+        </div>
+      </fieldset>
+      <fieldset class="interview">
+        <div class="interview__wrapper">
 
-      </form>
-    </div>
-  </section>
-  <section class="interview">
-    <div class="interview__wrapper">
-      <h2 class="interview__title visually-hidden">Какое устройство ?</h2>
-      <form class="interview__form">
+          <input class="interview__input" type="radio" id="ios" checked>
+          <label for="ios">Pink для iOS</label>
 
-        <input class="interview__input" type="radio" id="ios" checked>
-        <label for="ios">Pink для iOS</label>
+          <input class="interview__input" type="radio" id="android">
+          <label for="android">Pink на Android</label>
 
-        <input class="interview__input" type="radio" id="android">
-        <label for="android">Pink на Android</label>
+          <input class="interview__input" type="radio" id="windows">
+          <label for="windows">Windows Phone</label>
 
-        <input class="interview__input" type="radio" id="windows">
-        <label for="windows">Windows Phone</label>
+        </div>
+      </fieldset>
+      <fieldset class="textarea">
+        <div class="textarea__wrapper">
+          <h2 class="textarea__title">Опишите свои эмоции</h2>
 
-      </form>
-    </div>
-  </section>
-  <section class="textarea">
-    <div class="textarea__wrapper">
-      <h2 class="textarea__title">Опишите свои эмоции</h2>
-      <form class="textarea__form">
-        <textarea class="textarea__textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </form>
-      <a class="textarea__button" href="#">Отправить форму</a>
-      <p><span>*</span> -- Обязательные поля</p>
-    </div>
-  </section>
+            <textarea class="textarea__textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
+            <a class="textarea__button" href="#">Отправить форму</a>
+
+            <p class="textarea__info"><span>*</span> -- Обязательные поля</p>
+
+        </div>
+      </fieldset>
+    </form>
+  </div>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__logo" src="http://placehold.it/180x50" alt="logo">Pink</a>
+      <a class="footer__logo"><img src="http://placehold.it/180x50" alt="logo">Pink</a>
       <div class="socials">
         <a class="socials__button socials__button--twitter" href="#">twitter</a>
         <a class="socials__button socials__button--facebook" href="#">facebook</a>
         <a class="socials__button socials__button--play" href="#">play</a>
       </div>
       <div class="footer__sign">
-        <p>Разработано</p>
-        <a href="#">htmlacademy</a>
+        <p class="footer__text">Разработано</p>
+        <a class="footer__logoacademy" href="#">htmlacademy</a>
       </div>
     </div>
   </footer>
