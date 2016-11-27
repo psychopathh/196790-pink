@@ -7,45 +7,46 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <h1 class="main-header__title">PINK</h1>
-        <div class="main-header__mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <a class="main-header__logo" href="#"><img src="http://placehold.it/90x35" alt="Логотип"></a>
+        <div class="main-header__menu">
+          <a class="main-header__button" href="#" src="http://placehold.it/90x35"alt="меню"></a>
         </div>
       </div>
     </header>
     <section class="download">
       <div class="download__wrapper">
-        <h2 class="download__title visually-hidden">Скачать приложение.</h2>
-        <a class="download__btn" href="#">Скачать приложение</a>
+        <div class="download__button">
+          <h2 class="download__title">
+            <a class="download__btn" href="#">Скачать приложение</a>
+          </h2>
+        </div>
         <div class="download__socials">
           <a class="download__social download__social--ios" href="#">ios</a>
           <a class="download__social download__social--android" href="#">android</a>
           <a class="download__social download__social--windows" href="#">windows</a>
         </div>
-        <p class="download__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+          <p class="download__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
       </div>
     </section>
     <section class="description">
       <div class="description__wrapper">
-        <h2 class="description__title">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
-        <ul class="description__items">
-          <li class="description__item">
+        <h2 class="description__title">Устали от серости мегаполиса? >Нам есть, что вам предложить!</h2>
+        <div class="description__items">
+          <div class="description__item">
             <b>Поднимает настроение</b>
             <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="description__item">
+          </div>
+          <div class="description__item">
             <b>Меняет мир вокруг</b>
             <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="description__item">
+          </div>
+          <div class="description__item">
             <b>Заводит новых друзей</b>
             <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+          </div>
+        </div>
         <img class="description__picture" src="http://placehold.it/160x275" alt="phone"/>
       </div>
     </section>
@@ -55,7 +56,7 @@
         <ul class="reviews__items">
           <li class="reviews__item slider__item">
             <b>Николай Петров</b>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
           </li>
         </ul>
         <input class="slider__input" type="radio" name="reviews" checked>
@@ -85,21 +86,21 @@
         <input class="slider__input" type="radio" name="price">
       </div>
     </section>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <h2 class="main-footer__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <p class="main-footer__contacts">
-          <b>Звоните:</b>
-          <span>+7(812)555-66-66</span>
-          <b>Пишите:</b>
-          <span>mail@htmlacademy.ru</span>
-          <b>Приезжайте в гости:</b>
-          <span>ул.Большая Конбшкнная, 19/8</span>
-        </p>
-        <div class="main-footer__map">
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <div class="contacts__contact">
+          <p class="contacts__text">Звоните:</p>
+          <a class="contacts__number" href="#">+7(812)555-66-66</a>
+          <p class="contacts__text">Пишите:</p>
+          <a class="contacts__mail" href="#">mail@htmlacademy.ru</a>
+          <p class="contacts__text">Приезжайте в гости:</p>
+          <a class="contacts__address" href="#">ул.Большая Конбшкнная, 19/8</a>
+        </div>
+        <div class="contacts-map">
           <img class="description__picture" src="http://placehold.it/320x200" alt="map"/>
         </div>
       </div>
-    </footer>
+    </section>
   </body>
 </html>
