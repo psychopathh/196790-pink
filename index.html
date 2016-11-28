@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo" href="#"><img src="http://placehold.it/90x35" alt="Логотип"></a>
-        <div class="main-header__menu">
-          <a class="main-header__button" href="#"><img src="http://placehold.it/90x35" alt="меню"></a>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="block-wrapper">
+      <div class="header-logo">
+        <a class="header-logo__button" href="#"><img class="header-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
       </div>
-    </header>
+      <div class="main-header__menu">
+        <a class="main-header__button" href="#"><img class="main-header__img" src="http://placehold.it/90x35" alt="меню"></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="top-picture">
+      <img class="top-picture__img" src="http://placehold.it/320x230" alt="изображение домов">
+    </div>
     <section class="download">
-      <div class="download__wrapper">
-        <div class="download__button">
-          <a class="download__btn" href="#">Скачать приложение</a>
+      <div class="block-wrapper">
+        <div class="download-button">
+          <a class="download-button__btn" href="#">Скачать приложение</a>
         </div>
-        <div class="download__socials">
-          <a class="download__social download__social--ios" href="#">ios</a>
-          <a class="download__social download__social--android" href="#">android</a>
-          <a class="download__social download__social--windows" href="#">windows</a>
+        <div class="download-systems">
+          <a class="download-system download-system--ios" href="#">ios</a>
+          <a class="download-system download-system--android" href="#">android</a>
+          <a class="download-system download-system--windows" href="#">windows</a>
         </div>
           <p class="download__text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -29,19 +35,19 @@
       </div>
     </section>
     <section class="description">
-      <div class="description__wrapper">
-        <h2 class="description__title">Устали от серости мегаполиса? >Нам есть, что вам предложить!</h2>
+      <div class="block-wrapper">
+        <h2 class="description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
         <div class="description__list">
           <div class="description__item">
-            <b>Поднимает настроение</b>
+            <p class="description__tit">Поднимает настроение</p>
             <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
           <div class="description__item">
-            <b>Меняет мир вокруг</b>
+            <p class="description__tit">Меняет мир вокруг</p>
             <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
           <div class="description__item">
-            <b>Заводит новых друзей</b>
+            <p class="description__tit">Заводит новых друзей</p>
             <p class="description__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
         </div>
@@ -49,11 +55,11 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper slider">
+      <div class="block-wrapper slider">
         <h2 class="reviews__title visually-hidden">Отзывы</h2>
-        <ul class="reviews__items">
+        <ul class="reviews__list">
           <li class="reviews__item slider__item">
-            <b>Николай Петров</b>
+            <p class="reviews__tit">Николай Петров</p>
             <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
           </li>
         </ul>
@@ -63,19 +69,23 @@
       </div>
     </section>
     <section class="price">
-      <div class="price__wrapper slider">
+      <div class="block-wrapper slider">
         <h2 class="price__title visually-hidden">Стандарт</h2>
         <div class="price__items">
           <div class="price__item-top">
-            <b>Стандарт</b>
+            <p class="price__tit">Стандарт</p>
             <p class="price__cost">3,99 USD</p>
           </div>
           <div class="price__item-bottom">
-            <ul>
-              <li class="price__item">розовый фильтр</li>
-              <li class="price__item">смайлики</li>
-              <li class="price__item">комментарии</li>
-            </ul>
+              <div class="price__item">
+                <p class="price__text">розовый фильтр</p>
+              </div>
+              <div class="price__item">
+                <p class="price__text">смайлики</p>
+              </div>
+              <div class="price__item">
+                <p class="price__text">комментарии</p>
+              </div>
           </div>
         </div>
         <input class="slider__input" type="radio" name="price">
@@ -84,20 +94,27 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="block-wrapper">
         <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <div class="contacts__contact">
-          <p class="contacts__text">Звоните:</p>
-          <a class="contacts__number" href="#">+7(812)555-66-66</a>
-          <p class="contacts__text">Пишите:</p>
-          <a class="contacts__mail" href="#">mail@htmlacademy.ru</a>
-          <p class="contacts__text">Приезжайте в гости:</p>
-          <a class="contacts__address" href="#">ул.Большая Конбшкнная, 19/8</a>
+          <div class="contacts__phone">
+            <p class="contacts__text">Звоните:</p>
+            <a class="contacts__number" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+          </div>
+          <div class="contacts__email">
+            <p class="contacts__text">Пишите:</p>
+            <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__adds">
+            <p class="contacts__text">Приезжайте в гости:</p>
+            <a class="contacts__address" href="#">ул.Большая Конюшенная, 19/8</a>
+          </div>>
         </div>
-        <div class="contacts-map">
-          <img class="description__picture" src="http://placehold.it/320x200" alt="map"/>
+        <div class="contacts-location">
+          <img class="contacts-location__picture" src="http://placehold.it/320x200" alt="map"/>
         </div>
       </div>
     </section>
-  </body>
+  </main>
+</body>
 </html>
