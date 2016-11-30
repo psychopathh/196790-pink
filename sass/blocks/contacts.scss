@@ -1,0 +1,32 @@
+.contacts__title {
+  font-size: 24px;
+  font-weight: 100;
+  color: #283645;
+  text-align: center;
+}
+.contacts__text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #283645;
+  text-align: center;
+}
+.contacts {
+  &__number {
+    font-size: 24px;
+    color: #d22856;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  &__mail {
+    font-size: 24px;
+    color: #d22856;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  &__address {
+    font-size: 24px;
+    color: #d22856;
+    font-weight: 100;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,18 @@
+.reviews {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+  &__head {
+    font-weight: bold;
+    color: #000000;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+.reviews__item {
+  list-style: none;
+}
+.reviews__list {
+  padding: 0;
+}
