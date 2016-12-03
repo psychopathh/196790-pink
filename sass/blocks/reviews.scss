@@ -1,14 +1,14 @@
 .reviews {
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
+  font-size: $font-size-title;
+  line-height: $line-height-text;
   text-align: center;
-  &__head {
-    font-weight: bold;
-    color: #000000;
-    font-size: 18px;
-    line-height: 30px;
-  }
+  color: $blue;
+}
+.reviews__head {
+  font-size: $font-size-text;
+  line-height: $line-height-text;
+  font-weight: bold;
+  color: #000000;
 }
 .reviews__item {
   list-style: none;

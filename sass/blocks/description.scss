@@ -1,11 +1,16 @@
-.description {
+.description__title {
+  font-size: 24px;
+  font-weight: lighter;
+  color: $blue;
+}
+.description__head {
+  font-size: $font-size-text;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+}
+.description__text {
   font-size: 14px;
   line-height: 24px;
-  color: #283645;
-  text-align: center;
-  &__head {
-    font-weight: bold;
-    color: #000000;
-    font-size: 18px;
-  }
+  color: $blue;
 }

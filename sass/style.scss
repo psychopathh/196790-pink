@@ -1,4 +1,10 @@
 @import "./node_modules/normalize.css/normalize";
+@import "./sass/general/variables.scss";
+@import "./sass/general/mixin.scss";
+@import "./sass/general/block-wrapper.scss";
+@import "./sass/general/body.scss";
+@import "./sass/general/wrapper.scss";
+@import "./sass/general/photo-wrap.scss";
 @import "./sass/blocks/main-header.scss";
 @import "./sass/blocks/header-logo.scss";
 @import "./sass/blocks/main-logo.scss";
@@ -28,9 +34,3 @@
 @import "./sass/blocks/footer.scss";
 @import "./sass/blocks/socials.scss";
 @import "./sass/blocks/footer-sign.scss";
-@import "./sass/general/mixin.scss";
-@import "./sass/general/block-wrapper.scss";
-@import "./sass/general/body.scss";
-@import "./sass/general/wrapper.scss";
-@import "./sass/general/photo-wrap.scss";
-

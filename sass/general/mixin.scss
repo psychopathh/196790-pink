@@ -1,0 +1,24 @@
+@mixin decoration-text {
+  font-size: $font-size-text;
+  line-height: $line-height-text;
+  color: $blue;
+}
+@mixin decoration-title {
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  color: $red;
+  font-weight: $font-weight-title;
+  text-transform:  $text-transform;
+}
+@mixin decoration-label {
+  font-size: $font-size-title;
+  line-height: $line-height-text;
+  color: $red;
+  text-transform: $text-transform;
+}
+@mixin title {
+  font-size: 24px;
+  font-weight: lighter;
+  color: $blue;
+  text-align: $text-align;
+}

@@ -1,9 +1,8 @@
 .download {
-  background-color: #1d2631;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: 100;
+  font-size: $font-size-title;
   line-height: 24px;
+  background-color: #1d2631;
+  color: $white;
 }
 .download__text {
   padding-bottom: 30px;

@@ -1,11 +1,6 @@
-.contact__label {
-  font-size: 14px;
-  line-height: 30px;
-  color: #d22856;
-  text-transform: uppercase;
+.adress__label {
+  @include decoration-label;
 }
-.contact__input {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
+.adress__input {
+  @include decoration-text;
 }
