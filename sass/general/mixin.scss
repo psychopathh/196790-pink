@@ -22,3 +22,10 @@
   color: $blue;
   text-align: $text-align;
 }
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

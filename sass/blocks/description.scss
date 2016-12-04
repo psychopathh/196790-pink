@@ -1,4 +1,9 @@
+.description {
+  float: none;
+  min-height: 787px;
+}
 .description__title {
+  min-height: 190px;
   font-size: 24px;
   font-weight: lighter;
   color: $blue;
@@ -13,4 +18,30 @@
   font-size: 14px;
   line-height: 24px;
   color: $blue;
+}
+.description__picture {
+  float: none;
+  width: 155px;
+  height: 280px;
+  background: url("http://placehold.it/320x200");
+}
+@media (min-width: 700px) {
+  .description {
+    min-height: 727px;
+  }
+  .description__list {
+    float: right;
+    overflow: hidden;
+    width: 300px;
+  }
+  .description__item {
+    float: right;
+    width: 300px;
+  }
+  .description__picture {
+    float: left;
+    width: 280px;
+    height: 490px;
+    background: url("http://placehold.it/320x200");
+  }
 }

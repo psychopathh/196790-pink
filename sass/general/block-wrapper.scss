@@ -1,4 +1,12 @@
 .block-wrapper {
   width: 320px;
   margin: 0 auto;
+  overflow: hidden;
+}
+@media (min-width: 700px) {
+  .block-wrapper {
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 }

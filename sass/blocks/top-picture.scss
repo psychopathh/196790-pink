@@ -1,5 +1,14 @@
-.top-picture__head {
-  font-size: 24px;
-  font-weight: lighter;
-  color: #ffffff;
+.top-picture {
+  float: none;
+  width: 320px;
+  height: 420px;
+  background: url(http://placehold.it/320x420);
+}
+@media (min-width: 700px) {
+  .top-picture {
+  float: none;
+  width: 700px;
+  height: 618px;
+  background: url(http://placehold.it/700x618);
+  }
 }

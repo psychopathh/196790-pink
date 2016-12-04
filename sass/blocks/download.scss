@@ -1,9 +1,19 @@
 .download {
+  float: none;
   font-size: $font-size-title;
   line-height: 24px;
   background-color: #1d2631;
   color: $white;
+  min-height: 270px;
 }
 .download__text {
   padding-bottom: 30px;
+}
+@media (min-width: 700px) {
+  .download {
+    float: none;
+  width: 700px;
+  height: 618px;
+  background: url(http://placehold.it/700x618);
+  }
 }
