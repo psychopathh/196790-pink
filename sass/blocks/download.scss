@@ -9,11 +9,18 @@
 .download__text {
   padding-bottom: 30px;
 }
+.download__head {
+  display: none;
+}
 @media (min-width: 700px) {
   .download {
-    float: none;
+  float: none;
   width: 700px;
   height: 618px;
   background: url(http://placehold.it/700x618);
+  }
+  .download__head { /*что то не работает блин*/
+    font-size: 30px;
+    color: $white;
   }
 }

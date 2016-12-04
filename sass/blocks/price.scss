@@ -1,7 +1,7 @@
 .price {
   min-height: 472px;
 }
-.price__head {
+.price__headhit {
   margin: 0;
   padding-top: 20px;
   font-size: $font-size-text;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
   color: $white;
 }
-.price__cost {
+.price__costhit {
   margin: 0;
   padding-bottom: 20px;
   font-size: 24px;
@@ -28,4 +28,27 @@
   line-height: $line-height-text;
   text-align: left;
   color: $blue;
+}
+.price__head {
+  display: none;
+}
+.price__cost {
+  display: none;
+}
+@media (min-width: 700px) { /*тут тоже запутался*/
+  .price__itemtop {
+    float: right;
+    width: 468px;
+    height: 85px;
+  }
+  .price__head {
+    float: left;
+    width: 150px;
+    height: 85px;
+  }
+  .price__cost {
+    float: left;
+    width: 150px;
+    height: 85px;
+  }
 }
