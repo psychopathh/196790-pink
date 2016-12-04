@@ -1,0 +1,26 @@
+.contacts__title {
+  @include title;
+}
+.contacts__text {
+  @include decoration-text;
+  font-weight: bold;
+  text-align: center;
+}
+.contacts__number {
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: $red;
+  }
+.contacts__mail {
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: $red;
+  }
+.contacts__address {
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: $red;
+  }

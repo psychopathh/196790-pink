@@ -3,169 +3,185 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#"><img class="header-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
-      <div class="main-header__menu">
-        <a class="main-header__button" href="#"><img class="main-header__img" src="http://placehold.it/90x35" alt="меню"></a>
-      </div>
-      <div class="main-menu">
-        <div class="main-logo">
-          <a class="main-logo__button" href="#"><img class="main-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
-        </div>
-        <div class="main-close">
-          <a class="main-close__button" href="#"><img class="main-close__img" src="http://placehold.it/90x35" alt="крестик"></a>
-        </div>
-        <nav class="main-menu__nav">
-          <ul class="main-menu__list">
-            <li class="main-menu__item">Главная</li>
-            <li class="main-menu__item">Фотографии</li>
-            <li class="main-menu__item">Конкурс</li>
-            <li class="main-menu__item">Html academy</li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="top-picture">
-      <img class="top-picture__img" src="http://placehold.it/320x230" alt="изображение домов"/>
-      <div class="top-picture__title">
-        <h1 class="top-picture__head">
-          Фотографии пользователей
-        </h1>
-      </div>
-    </div>
-    <div class="top-info">
-      <h2 class="top-info__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-    </div>
-    <section class="photo">
+<body class="body">
+  <div class="wrapper">
+    <header class="main-header">
       <div class="block-wrapper">
-        <div class="photo__item photo__item--active">
-        <img class="photo__img" src="http://placehold.it/320x140" alt="panorama"/>
-        <p class="photo__sign">
-          Анна<span class="photo__span">(5 минут назад)</span>
-        </p>
-        <p class="photo__text">
-          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-        </p>
-        <p class="photo__like">
-          нравится: 215
-        </p>
+        <a class="main-header__logo" href="#"><img class="header-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
+        <div class="main-header__menu">
+          <a class="main-header__button" href="#"><img class="main-header__img" src="http://placehold.it/90x35" alt="меню"></a>
         </div>
-        <div class="photo__item">
-        <img class="photo__img"  src="http://placehold.it/285x180" alt="машина"/>
-        <p class="photo__sign">
-          Левон<span class="photo__span">(5 часов назад)</span>
-        </p>
-        <p class="photo__text">
-          Вчера он на луну летал, сегодня в руки к нам попал
-        </p>
-        <p class="photo__like">
-          нравится: 356
-        </p>
-        </div>
-        <div class="photo__item">
-        <img class="photo__img"  src="http://placehold.it/285x180" alt="барабаны"/>
-        <p class="photo__sign">
-          Антон<span class="photo__span">(12 часов назад)</span>
-        </p>
-        <p class="photo__text">
-          Соседи будут рады!
-        </p>
-        <p class="photo__like">
-          нравится: 666
-        </p>
-        </div>
-        <div class="photo__item">
-        <img class="photo__img"  src="http://placehold.it/285x180" alt="окна"/>
-        <p class="photo__sign">
-          Борис<span class="photo__span">(20 часов назад)</span>
-        </p>
-        <p class="photo__text">
-          Здесь могла быть ваша цитата о высоком и вечном.
-        </p>
-        <p class="photo__like">
-          нравится: 215
-        </p>
-        </div>
-        <div class="photo__item">
-        <img class="photo__img"  src="http://placehold.it/285x180" alt="кубанская бахча"/>
-        <p class="photo__sign">
-          Сергей<span class="photo__span">(25 часов назад)</span>
-        </p>
-        <p class="photo__text">
-          Самая кубанская в мире!
-        </p>
-        <p class="photo__like">
-          нравится: 4
-        </p>
-        </div>
-        <div class="photo__item">
-        <img class="photo__img"  src="http://placehold.it/285x180" alt="ноги"/>
-        <p class="photo__sign">
-          Максим<span class="photo__span">(12 часов назад)</span>
-        </p>
-        <p class="photo__text">
-          Где снег-то?
-        </p>
-        <p class="photo__like">
-          нравится: 150
-        </p>
-        </div>
-        <div class="photo__item">
-        <img class="photo__img"  src="http://placehold.it/285x180" alt="car"/>
-        <p class="photo__sign">
-          Надежда<span class="photo__span">(45 часов назад)</span>
-        </p>
-        <p class="photo__text">
-          Всем GM и взаимные лайки!
-        </p>
-        <p class="photo__like">
-          нравится: 2560
-        </p>
-        </div>
-      </div>
-    </section>
-    <section class="desc">
-      <div class="block-wrapper">
-        <h2 class="desc__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-      </div>
-    </section>
-    <section class="picture-slider">
-      <div class="block-wrapper">
-        <h2 class="picture-slider__title visually-hidden">Slider</h2>
-      <form class="form">
-        <img src="http://placehold.it/280x370" alt="дорога">
-        <div class="picture-slider__list">
-          <a class="picture-slider__icon picture-slider__icon--width" href="#">width</a>
-          <a class="picture-slider__icon picture-slider__icon--fill" href="#">fill</a>
-          <a class="picture-slider__icon picture-slider__icon--bright" href="#">bright</a>
-        </div>
-        <img src="http://placehold.it/320x50" alt="полоска">
-          <div class="picture-slider__buttons">
-            <button class="picture-slider__btn picture-slider__btn--post">Запостить</button>>
-            <button class="picture-slider__btn picture-slider__btn--cancel">Отмена</button>>
+        <div class="main-menu">
+          <div class="main-logo">
+            <a class="main-logo__button" href="#"><img class="main-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
           </div>
-      </form>
+          <div class="main-close">
+            <a class="main-close__button" href="#"><img class="main-close__img" src="http://placehold.it/90x35" alt="крестик"></a>
+          </div>
+          <nav class="main-menu__nav">
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a class="main-menu__item" href="index.html">Главная</a></li>
+              <li class="main-menu__item"><a class="main-menu__item" href="photo.html">Фотографии</a></li>
+              <li class="main-menu__item"><a class="main-menu__item" href="form.html">Конкурс</a></li>
+              <li class="main-menu__item"><a class="main-menu__item" href="#">Html academy</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-  <div class="block-wrapper">
-    <a class="footer__logo"><img src="http://placehold.it/180x50" alt="logo">Pink</a>
-    <div class="footer__socials">
-      <a class="footer__button footer__button--twitter" href="#">twitter</a>
-      <a class="footer__button footer__button--facebook" href="#">facebook</a>
-      <a class="footer__button footer__button--play" href="#">play</a>
+    </header>
+    <main>
+      <div class="top-picture">
+        <img class="top-picture__img" src="http://placehold.it/320x230" alt="изображение домов"/>
+        <div class="top-picture__title">
+          <h1 class="top-picture__head">
+            Фотографии пользователей
+          </h1>
+        </div>
+      </div>
+      <div class="top-info">
+        <h2 class="top-info__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      </div>
+      <section class="photo">
+        <div class="block-wrapper">
+          <div class="photo__item photo__item--active">
+          <img class="photo__img" src="http://placehold.it/320x140" alt="panorama"/>
+            <div class="photo-wrap">
+              <p class="photo__sign">
+                Анна<span class="photo__span">(5 минут назад)</span>
+              </p>
+              <p class="photo__text">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <p class="photo__like">
+                нравится: 215
+              </p>
+            </div>
+          </div>
+          <div class="photo__item">
+          <img class="photo__img"  src="http://placehold.it/285x180" alt="машина"/>
+            <div class="photo-wrap">
+              <p class="photo__sign">
+                Левон<span class="photo__span">(5 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Вчера он на луну летал, сегодня в руки к нам попал
+              </p>
+              <p class="photo__like">
+                нравится: 356
+              </p>
+            </div>
+          <div class="photo__item">
+          <img class="photo__img"  src="http://placehold.it/285x180" alt="барабаны"/>
+            <div class="photo-wrap">
+              <p class="photo__sign">
+                Антон<span class="photo__span">(12 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Соседи будут рады!
+              </p>
+              <p class="photo__like">
+                нравится: 666
+              </p>
+            </div>
+          </div>
+          <div class="photo__item">
+          <img class="photo__img"  src="http://placehold.it/285x180" alt="окна"/>
+            <div class="photo-wrap">
+              <p class="photo__sign">
+                Борис<span class="photo__span">(20 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <p class="photo__like">
+                нравится: 215
+              </p>
+            </div>
+          </div>
+          <div class="photo__item">
+          <img class="photo__img"  src="http://placehold.it/285x180" alt="кубанская бахча"/>
+            <div class="photo-wrap">
+          <p class="photo__sign">
+                Сергей<span class="photo__span">(25 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Самая кубанская в мире!
+              </p>
+              <p class="photo__like">
+                нравится: 4
+              </p>
+            </div>
+          </div>
+          <div class="photo__item">
+          <img class="photo__img"  src="http://placehold.it/285x180" alt="ноги"/>
+            <div class="photo-wrap">
+              <p class="photo__sign">
+                Максим<span class="photo__span">(12 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Где снег-то?
+              </p>
+              <p class="photo__like">
+                нравится: 150
+              </p>
+            </div>
+          </div>
+          <div class="photo__item">
+          <img class="photo__img"  src="http://placehold.it/285x180" alt="car"/>
+            <div class="photo-wrap">
+              <p class="photo__sign">
+                Надежда<span class="photo__span">(45 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <p class="photo__like">
+                нравится: 2560
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="desc">
+        <div class="block-wrapper">
+          <h2 class="desc__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        </div>
+      </section>
+      <section class="picture-slider">
+        <div class="block-wrapper">
+        <form class="form">
+          <img src="http://placehold.it/280x370" alt="дорога">
+          <div class="picture-slider__list">
+            <a class="picture-slider__icon picture-slider__icon--width" href="#">width</a>
+            <a class="picture-slider__icon picture-slider__icon--fill" href="#">fill</a>
+            <a class="picture-slider__icon picture-slider__icon--bright" href="#">bright</a>
+          </div>
+          <img src="http://placehold.it/320x50" alt="полоска">
+            <div class="picture-slider__buttons">
+              <button class="picture-slider__btn picture-slider__btn--post">Запостить</button>
+              <button class="picture-slider__btn picture-slider__btn--cancel">Отмена</button>
+            </div>
+        </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+    <div class="block-wrapper">
+      <a class="footer__logo"><img src="http://placehold.it/180x50" alt="logo">Pink</a>
+      <div class="footer__socials">
+        <a class="footer__button footer__button--twitter" href="#">twitter</a>
+        <a class="footer__button footer__button--facebook" href="#">facebook</a>
+        <a class="footer__button footer__button--play" href="#">play</a>
+      </div>
+      <div class="footer__sign">
+        <p class="footer__text">Разработано</p>
+        <a class="footer__logoacademy" href="#">htmlacademy</a>
+      </div>
     </div>
-    <div class="footer__sign">
-      <p class="footer__text">Разработано</p>
-      <a class="footer__logoacademy" href="#">htmlacademy</a>
-    </div>
+    </footer>
   </div>
-  </footer>
 </body>
 </html>

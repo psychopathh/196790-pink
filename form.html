@@ -3,134 +3,138 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="main-header">
-    <div class="block-wrapper">
-      <a class="main-header__logo" href="#"><img class="header-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
-      <div class="main-header__menu">
-        <a class="main-header__button" href="#"><img class="main-header__img" src="http://placehold.it/90x35" alt="меню"></a>
-      </div>
-      <div class="main-menu">
-        <div class="main-logo">
-          <a class="main-logo__button" href="#"><img class="main-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
+<body class="body">
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="block-wrapper">
+        <a class="main-header__logo" href="#"><img class="header-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
+        <div class="main-header__menu">
+          <a class="main-header__button" href="#"><img class="main-header__img" src="http://placehold.it/90x35" alt="меню"></a>
         </div>
-        <div class="main-close">
-          <a class="main-close__button" href="#"><img class="main-close__img" src="http://placehold.it/90x35" alt="крестик"></a>
+        <div class="main-menu">
+          <div class="main-logo">
+            <a class="main-logo__button" href="#"><img class="main-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
+          </div>
+          <div class="main-close">
+            <a class="main-close__button" href="#"><img class="main-close__img" src="http://placehold.it/90x35" alt="крестик"></a>
+          </div>
+          <nav class="main-menu__nav">
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a class="main-menu__item" href="index.html">Главная</a></li>
+              <li class="main-menu__item"><a class="main-menu__item" href="photo.html">Фотографии</a></li>
+              <li class="main-menu__item"><a class="main-menu__item" href="form.html">Конкурс</a></li>
+              <li class="main-menu__item"><a class="main-menu__item" href="#">Html academy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-menu__nav">
-          <ul class="main-menu__list">
-            <li class="main-menu__item">Главная</li>
-            <li class="main-menu__item">Фотографии</li>
-            <li class="main-menu__item">Конкурс</li>
-            <li class="main-menu__item">Html academy</li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="top-picture">
-      <img class="top-picture__img" src="http://placehold.it/320x230" alt="изображение домов"/>
-      <div class="top-picture__title">
-        <h1 class="top-picture__head">
-          Конкурс на самое безбашеное путешествие с Пинк
-        </h1>
+    </header>
+    <main>
+      <div class="top-picture">
+        <img class="top-picture__img" src="http://placehold.it/320x230" alt="изображение домов"/>
+        <div class="top-picture__title">
+          <h1 class="top-picture__head">
+            Конкурс на самое безбашеное путешествие с Пинк
+          </h1>
+        </div>
       </div>
-    </div>
-    <div class="registration">
-      <h2 class="registration__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
-      <form class="form">
-        <fieldset class="info">
-          <div class="block-wrapper">
+      <div class="registration">
+        <h2 class="registration__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
+        <form class="form">
+          <fieldset class="info">
+            <div class="block-wrapper">
 
-            <label class="info__label" for="surname">Фамилия</label>
-            <input class="info__control" type="text" id="surname" placeholder="Укажите фамилию *">
+              <label class="info__label" for="surname">Фамилия:</label>
+              <input class="info__control" type="text" id="surname" placeholder="Укажите фамилию *">
 
-            <label class="info__label" for="name">Имя</label>
-            <input class="info__control" type="text" id="name" placeholder="Введите ваше имя *">
+              <label class="info__label" for="name">Имя:</label>
+              <input class="info__control" type="text" id="name" placeholder="Введите ваше имя *">
 
-            <label class="info__label" for="patronymic">Фамилия</label>
-            <input class="info__control" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+              <label class="info__label" for="patronymic">Отчество:</label>
+              <input class="info__control" type="text" id="patronymic" placeholder="Ну и отчество тоже">
 
-          </div>
-        </fieldset>
-        <fieldset class="achievments">
-          <div class="block-wrapper">
-            <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
+            </div>
+          </fieldset>
+          <fieldset class="achievments">
+            <div class="block-wrapper">
+              <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
 
-            <input class="achievements__control" type="checkbox" id="shark" checked>
-            <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
+              <input class="achievements__control" type="checkbox" id="shark" checked>
+              <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
 
-            <input class="achievements__control" type="checkbox" id="burn" checked>
-            <label class="achievements__label" for="burn">Обгорел на пляже</label>
+              <input class="achievements__control" type="checkbox" id="burn" checked>
+              <label class="achievements__label" for="burn">Обгорел на пляже</label>
 
-            <input class="achievements__control" type="checkbox" id="chack">
-            <label class="achievements__label" for="chack">Видел чака норриса</label>
+              <input class="achievements__control" type="checkbox" id="chack">
+              <label class="achievements__label" for="chack">Видел чака норриса</label>
 
-            <input class="achievements__control" type="checkbox" id="souvenir">
-            <label class="achievements__label" for="souvenir">Накупил сувениров</label>
+              <input class="achievements__control" type="checkbox" id="souvenir">
+              <label class="achievements__label" for="souvenir">Накупил сувениров</label>
 
-            <input class="achievements__control" type="checkbox" id="tower" checked>
-            <label class="achievements__label" for="tower">Удержал башню</label>
+              <input class="achievements__control" type="checkbox" id="tower" checked>
+              <label class="achievements__label" for="tower">Удержал башню</label>
 
-            <input class="achievements__control" type="checkbox" id="hotel">
-            <label class="achievements__label" for="hotel">Разгромил отель</label>
-          </div>
-        </fieldset>
-        <fieldset class="contact">
-          <div class="block-wrapper">
+              <input class="achievements__control" type="checkbox" id="hotel">
+              <label class="achievements__label" for="hotel">Разгромил отель</label>
+            </div>
+          </fieldset>
+          <fieldset class="adress">
+            <div class="block-wrapper">
 
-            <label class="contact__label"  for="number">Номер телефона</label>
-            <input class="contact__input" type="text" id="number" placeholder="Номер, пожалуйста">
+              <label class="adress__label"  for="number">Номер телефона</label>
+              <input class="adress__input" type="text" id="number" placeholder="Номер, пожалуйста">
 
-            <label class="contact__label"  for="mail">Адресок почты</label>
-            <input class="contact__input" type="text" id="mail" placeholder="Введите почту *">
+              <label class="adress__label"  for="mail">Адресок почты</label>
+              <input class="adress__input" type="text" id="mail" placeholder="Введите почту *">
 
-          </div>
-        </fieldset>
-        <fieldset class="interview">
-          <div class="block-wrapper">
+            </div>
+          </fieldset>
+          <fieldset class="interview">
+            <div class="block-wrapper">
+              <h2 class="interview__title">С каким приложением путешествовали?</h2>
 
-            <input class="interview__control" type="radio" id="ios" checked>
-            <label class="interview__label" for="ios">Pink для iOS</label>
+              <input class="interview__control" type="radio" id="ios" checked>
+              <label class="interview__label" for="ios">Pink для iOS</label>
 
-            <input class="interview__control" type="radio" id="android">
-            <label class="interview__label" for="android">Pink на Android</label>
+              <input class="interview__control" type="radio" id="android">
+              <label class="interview__label" for="android">Pink на Android</label>
 
-            <input class="interview__control" type="radio" id="windows">
-            <label class="interview__label" for="windows">Windows Phone</label>
+              <input class="interview__control" type="radio" id="windows">
+              <label class="interview__label" for="windows">Windows Phone</label>
 
-          </div>
-        </fieldset>
-        <fieldset class="textarea">
-          <div class="block-wrapper">
-            <h2 class="textarea__title">Опишите свои эмоции</h2>
+            </div>
+          </fieldset>
+          <fieldset class="textarea">
+            <div class="block-wrapper">
+              <h2 class="textarea__title">Опишите свои эмоции</h2>
 
-              <textarea class="textarea__content" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea class="textarea__content" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 
-              <a class="textarea__button" href="#">Отправить форму</a>
+                <a class="textarea__button" href="#">Отправить форму</a>
 
-              <p class="textarea__info"><span>*</span> -- Обязательные поля</p>
+                <p class="textarea__info"><span class="textarea__span">*</span> -- Обязательные поля</p>
 
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="block-wrapper">
-      <a class="footer__logo"><img src="http://placehold.it/180x50" alt="logo">Pink</a>
-      <div class="socials">
-        <a class="socials__button socials__button--twitter" href="#">twitter</a>
-        <a class="socials__button socials__button--facebook" href="#">facebook</a>
-        <a class="socials__button socials__button--play" href="#">play</a>
+            </div>
+          </fieldset>
+        </form>
       </div>
-      <div class="footer-sign">
-        <p class="footer-sign__text">Разработано</p>
-        <a class="footer-sign__logoacademy" href="#">htmlacademy</a>
+    </main>
+    <footer class="footer">
+      <div class="block-wrapper">
+        <a class="footer__logo"><img src="http://placehold.it/180x50" alt="logo">Pink</a>
+        <div class="socials">
+          <a class="socials__button socials__button--twitter" href="#">twitter</a>
+          <a class="socials__button socials__button--facebook" href="#">facebook</a>
+          <a class="socials__button socials__button--play" href="#">play</a>
+        </div>
+        <div class="footer-sign">
+          <p class="footer-sign__text">Разработано</p>
+          <a class="footer-sign__logoacademy" href="#">htmlacademy</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div
 </body>
 </html>

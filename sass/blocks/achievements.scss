@@ -1,0 +1,6 @@
+.achievements__title {
+  @include decoration-title;
+}
+.achievements__label {
+  @include decoration-text;
+}

@@ -1,0 +1,28 @@
+.photo__sign {
+  font-size: $font-size-title;
+  line-height: 24px;
+  font-weight: bold;
+  color: $blue;
+  padding-left: 17px;
+  padding-top: 17px;
+}
+.photo__span {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: $blue;
+  text-transform: uppercase;
+}
+.photo__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $blue;
+  padding-left: 17px;
+}
+.photo__like {
+  font-size: 12px;
+  line-height: 24px;
+  color: $red;
+  text-transform: uppercase;
+  padding-left: 45px;
+}

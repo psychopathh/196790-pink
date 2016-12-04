@@ -1,0 +1,28 @@
+.price__head {
+  margin: 0;
+  padding-top: 20px;
+  font-size: $font-size-text;
+  line-height: $line-height-text;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+}
+.price__cost {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: $line-height-text;
+  font-weight: lighter;
+  color: $white;
+  text-align: center;
+}
+.price__itemtop {
+  background-color: #283645;
+}
+.price__text {
+  font-size: $font-size-title;
+  line-height: $line-height-text;
+  text-align: left;
+  color: $blue;
+}

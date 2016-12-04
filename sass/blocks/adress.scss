@@ -1,0 +1,6 @@
+.adress__label {
+  @include decoration-label;
+}
+.adress__input {
+  @include decoration-text;
+}
