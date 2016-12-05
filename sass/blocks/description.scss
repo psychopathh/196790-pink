@@ -45,3 +45,21 @@
     background: url("http://placehold.it/320x200");
   }
 }
+@media (min-width: 1200px) {
+  .description__picture {
+    display: none;
+  }
+  .description__list {
+    width: 900px;
+    height: 200px;
+  }
+  .description__item {
+    float: left;
+    width: 250px;
+  }
+  .description__title {
+    width: 745px;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+}

@@ -4,6 +4,11 @@
   height: 420px;
   background: url(http://placehold.it/320x420);
 }
+.top-picture__head {
+  font-size: 24px;
+  font-weight: normal;
+  color: $white;
+}
 @media (min-width: 700px) {
   .top-picture {
   float: none;

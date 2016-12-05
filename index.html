@@ -24,10 +24,10 @@
           </div>
           <nav class="main-menu__nav">
             <ul class="main-menu__list">
-              <li class="main-menu__item"><a class="main-menu__item" href="index.html">Главная</a></li>
-              <li class="main-menu__item"><a class="main-menu__item" href="photo.html">Фотографии</a></li>
-              <li class="main-menu__item"><a class="main-menu__item" href="form.html">Конкурс</a></li>
-              <li class="main-menu__item"><a class="main-menu__item" href="#">Html academy</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
             </ul>
           </nav>
         </div>
@@ -35,22 +35,25 @@
     </header>
     <main>
       <div class="top-picture">
+        <section class="download">
+          <div class="download-wrap">
+            <div class="download__head">
+              <h2 class="download__title">Взгляните на жизнь иначе</h2>
+            </div>
+            <div class="download-control">
+              <a class="download-control__button" href="#">Скачать приложение</a>
+            </div>
+            <div class="download-list">
+              <a class="download-list__system download-list__system--ios" href="#">ios</a>
+              <a class="download-list__system download-list__system--android" href="#">android</a>
+              <a class="download-list__system download-list__system--windows" href="#">windows</a>
+            </div>
+              <p class="download__text">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </p>
+          </div>
+        </section>
       </div>
-      <section class="download">
-        <div class="block-wrapper">
-          <div class="download-control">
-            <a class="download-control__button" href="#">Скачать приложение</a>
-          </div>
-          <div class="download-list">
-            <a class="download-list__system download-list__system--ios" href="#">ios</a>
-            <a class="download-list__system download-list__system--android" href="#">android</a>
-            <a class="download-list__system download-list__system--windows" href="#">windows</a>
-          </div>
-            <p class="download__text">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
-        </div>
-      </section>
       <section class="description">
         <div class="block-wrapper">
           <h2 class="description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
@@ -91,6 +94,7 @@
           <ul class="reviews__list">
             <li class="reviews__item slider__item">
               <p class="reviews__head">Николай Петров</p>
+              <p class="reviews__sign">25 лет, водитель трамвая</p>
               <blockquote class="reviews__blockquote"><p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p></blockquote>
             </li>
           </ul>
@@ -103,8 +107,12 @@
         <div class="block-wrapper slider">
           <div class="price__items">
             <div class="price__itemtop">
-              <p class="price__head">Стандарт</p>
-              <p class="price__cost">3,99 USD</p>
+              <p class="price__head">База</p>
+              <p class="price__cost">1,99 USD</p>
+              <p class="price__headhit price__head">Стандарт</p>
+              <p class="price__costhit">3,99 USD</p>
+              <p class="price__head">Анлим</p>
+              <p class="price__cost">9,99 USD</p>
             </div>
             <div class="price__itembottom">
                 <div class="price__item">
@@ -146,6 +154,20 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+    <div class="block-wrapper">
+      <a class="footer__logo"><img src="http://placehold.it/180x50" alt="logo">Pink</a>
+      <div class="footer__socials">
+        <a class="footer__button footer__button--twitter" href="#">twitter</a>
+        <a class="footer__button footer__button--facebook" href="#">facebook</a>
+        <a class="footer__button footer__button--play" href="#">play</a>
+      </div>
+      <div class="footer__sign">
+        <p class="footer__text">Разработано</p>
+        <a class="footer__logoacademy" href="#">htmlacademy</a>
+      </div>
+    </div>
+    </footer>
   </div>
 </body>
 </html>

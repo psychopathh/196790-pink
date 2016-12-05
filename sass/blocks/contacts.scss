@@ -42,3 +42,23 @@
     margin: 100px auto;
   }
 }
+@media (min-width: 1200px) {
+  .contacts__title {
+    font-size: 50px;
+  }
+  .contacts__communication {
+    float: left;
+    width: 950px;
+  }
+  .contacts__phone {
+    float: left;
+  }
+  .contacts__email {
+    float: right;
+  }
+  .contacts__direction {
+    float: left;
+    margin: 0;
+    margin-left: 165px;
+  }
+}

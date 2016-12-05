@@ -33,3 +33,12 @@
     color: $red;
   }
 }
+@media (min-width: 1200px) {
+  .effect__picture {
+    float: left;
+  }
+  .effect__item{
+    float: right;
+    margin-right: 350px;
+  }
+}

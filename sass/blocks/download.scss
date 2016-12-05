@@ -19,8 +19,26 @@
   height: 618px;
   background: url(http://placehold.it/700x618);
   }
-  .download__head { /*что то не работает блин*/
+  .download__head {
+    display: block;
+  }
+  .download__title {
     font-size: 30px;
     color: $white;
+  }
+}
+@media (min-width: 1200px) {
+  .download__head {
+    display: block;
+  }
+  .download__title {
+    font-size: 30px;
+    color: $white;
+  }
+  .download {
+  float: none;
+  width: 1200px;
+  height: 646px;
+  background: url(http://placehold.it/1200x646);
   }
 }

@@ -26,3 +26,22 @@
   text-transform: uppercase;
   padding-left: 45px;
 }
+@media (min-width: 700px) {
+  .photo__item {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: 455px;
+  }
+  .photo__img--active {
+    width: 100%;
+  }
+  .photo__item--active {
+    float: left;
+    width: 100%;
+  }
+  .photo__text--active {
+    float: left;
+    width: 625px;
+  }
+}

@@ -17,3 +17,14 @@
 .reviews__list {
   padding: 0;
 }
+.reviews__sign {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .reviews__sign {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    color: $blue;
+  }
+}
