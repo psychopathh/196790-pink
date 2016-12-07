@@ -1,10 +1,4 @@
 .wrapper {
-  width: 320px;
+  max-width: 960px;
   margin: 0 auto;
-}
-@media($tablet-width) {
-  .wrapper {
-    width: 700px;
-    margin: 0 auto;
-  }
 }
