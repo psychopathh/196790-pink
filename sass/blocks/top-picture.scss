@@ -1,8 +1,8 @@
 .top-picture {
   float: none;
   width: 320px;
-  height: 420px;
-  background: url(http://placehold.it/320x420);
+  height: 396px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
   @media($tablet-width) {
     float: none;
     width: 700px;

@@ -1,19 +1,24 @@
 .main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
-  color: $color-white;
   background-color: $color-ebonyclay;
   text-align: center;
-  padding-top: 21px;
-  padding-bottom: 21px;
   text-transform: uppercase;
 }
 .main-menu__item {
   list-style: none;
+  border-bottom: 1px solid $color-black;
   @media($desktop-widths) {
     display: inline-block;
   }
+}
+.main-menu__link {
+  color: $color-white;
+  text-decoration: none;
 }
 .main-menu__list {
   padding: 0;

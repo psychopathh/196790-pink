@@ -1,3 +1,26 @@
 .download-list {
+  display: flex;
+  margin-left: 57px;
+  margin-bottom: 25px;
+  width: 203px;
+  justify-content: space-between;
   text-align: center;
+  font-size: 0;
+}
+.download-list__system--ios {
+  width: 50px;
+  height: 57px;
+  background: url("../img/logo-apple.svg") no-repeat;
+}
+.download-list__system--android {
+  margin-top: 8px;
+  width: 43px;
+  height: 48px;
+  background: url("../img/logo-android.svg") no-repeat;
+}
+.download-list__system--windows {
+  margin-top: 10px;
+  width: 44px;
+  height: 41px;
+  background: url("../img/logo-microsoft.svg") no-repeat;
 }
