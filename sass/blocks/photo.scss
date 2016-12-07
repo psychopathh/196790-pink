@@ -2,7 +2,7 @@
   font-size: $font-size-title;
   line-height: 24px;
   font-weight: bold;
-  color: $blue;
+  color: $color-ebonyclay;
   padding-left: 17px;
   padding-top: 17px;
 }
@@ -10,28 +10,27 @@
   font-size: 12px;
   line-height: 24px;
   font-weight: lighter;
-  color: $blue;
+  color: $color-ebonyclay;
   text-transform: uppercase;
 }
 .photo__text {
   font-size: 14px;
   line-height: 24px;
-  color: $blue;
+  color: $color-ebonyclay;
   padding-left: 17px;
 }
 .photo__like {
   font-size: 12px;
   line-height: 24px;
-  color: $red;
+  color: $text-cericered;
   text-transform: uppercase;
   padding-left: 45px;
 }
-@media (min-width: 700px) {
+@media($tablet-width) {
   .photo__item {
     float: left;
     margin-right: 20px;
     width: 300px;
-    height: 455px;
   }
   .photo__img--active {
     width: 100%;

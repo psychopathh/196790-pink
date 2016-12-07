@@ -2,35 +2,34 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
   <div class="wrapper">
     <header class="main-header">
-      <div class="block-wrapper">
-        <div class="header-logo">
-          <a class="header-logo__button" href="#"><img class="header-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
+      <div class="header-logo">
+        <a class="header-logo__button" href="#"><img class="header-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
+      </div>
+      <div class="main-header__menu">
+        <a class="main-header__button" href="#"><img class="main-header__img" src="http://placehold.it/90x35" alt="меню"></a>
+      </div>
+      <div class="main-menu">
+        <div class="main-logo">
+          <a class="main-logo__button" href="#"><img class="main-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
         </div>
-        <div class="main-header__menu">
-          <a class="main-header__button" href="#"><img class="main-header__img" src="http://placehold.it/90x35" alt="меню"></a>
+        <div class="main-close">
+          <a class="main-close__button" href="#"><img class="main-close__img" src="http://placehold.it/90x35" alt="крестик"></a>
         </div>
-        <div class="main-menu">
-          <div class="main-logo">
-            <a class="main-logo__button" href="#"><img class="main-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
-          </div>
-          <div class="main-close">
-            <a class="main-close__button" href="#"><img class="main-close__img" src="http://placehold.it/90x35" alt="крестик"></a>
-          </div>
-          <nav class="main-menu__nav">
-            <ul class="main-menu__list">
-              <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="main-menu__nav">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -55,42 +54,38 @@
         </section>
       </div>
       <section class="description">
-        <div class="block-wrapper">
-          <h2 class="description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-          <div class="description__list">
-            <div class="description__item">
-              <p class="description__head">Поднимает настроение</p>
-              <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </div>
-            <div class="description__item">
-              <p class="description__head">Меняет мир вокруг</p>
-              <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </div>
-            <div class="description__item">
-              <p class="description__head">Заводит новых друзей</p>
-              <p class="description__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-            </div>
+        <h2 class="description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <div class="description__list">
+          <div class="description__item">
+            <p class="description__head">Поднимает настроение</p>
+            <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
-          <div class="description__picture">
+          <div class="description__item">
+            <p class="description__head">Меняет мир вокруг</p>
+            <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
+          <div class="description__item">
+            <p class="description__head">Заводит новых друзей</p>
+            <p class="description__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+        <div class="description__picture">
         </div>
       </section>
       <section class="effect">
-        <div class="block-wrapper">
-          <div class="effect__item">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
-            <p class="effect__text">
-            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-            </p>
-          <a class="effect__link" href="#">Узнать больше об исследовании</a>
-          </div>
-          <div class="effect__picture">
-              <img class="effect__img" src="http://placehold.it/310x285" alt="часы"/>
-          </div>
+        <div class="effect__item">
+          <h2 class="effect__title">Эффект на 24 часа!</h2>
+          <p class="effect__text">
+          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+        <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
+        <div class="effect__picture">
+            <img class="effect__img" src="http://placehold.it/310x285" alt="часы"/>
         </div>
       </section>
       <section class="reviews">
-        <div class="block-wrapper slider">
+        <div class="slider">
           <ul class="reviews__list">
             <li class="reviews__item slider__item">
               <p class="reviews__head">Николай Петров</p>
@@ -104,7 +99,7 @@
         </div>
       </section>
       <section class="price">
-        <div class="block-wrapper slider">
+        <div class="slider">
           <div class="price__items">
             <div class="price__itemtop">
               <p class="price__head">База</p>
@@ -132,30 +127,27 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="block-wrapper">
-          <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
-          <div class="contacts__communication">
-            <div class="contacts__phone">
-              <p class="contacts__text">Звоните:</p>
-              <a class="contacts__number" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
-            </div>
-            <div class="contacts__email">
-              <p class="contacts__text">Пишите:</p>
-              <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="contacts__direction">
-              <p class="contacts__text">Приезжайте в гости:</p>
-              <a class="contacts__address" href="#">ул.Большая Конюшенная, 19/8</a>
-            </div>
+        <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <div class="contacts__communication">
+          <div class="contacts__phone">
+            <p class="contacts__text">Звоните:</p>
+            <a class="contacts__number" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
           </div>
-          <div class="contacts-location">
-            <img class="contacts-location__picture" src="http://placehold.it/320x200" alt="map"/>
+          <div class="contacts__email">
+            <p class="contacts__text">Пишите:</p>
+            <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
+          <div class="contacts__direction">
+            <p class="contacts__text">Приезжайте в гости:</p>
+            <a class="contacts__address" href="#">ул.Большая Конюшенная, 19/8</a>
+          </div>
+        </div>
+        <div class="contacts-location">
+          <img class="contacts-location__picture" src="http://placehold.it/320x200" alt="map"/>
         </div>
       </section>
     </main>
     <footer class="footer">
-    <div class="block-wrapper">
       <a class="footer__logo"><img src="http://placehold.it/180x50" alt="logo">Pink</a>
       <div class="footer__socials">
         <a class="footer__button footer__button--twitter" href="#">twitter</a>
@@ -166,7 +158,6 @@
         <p class="footer__text">Разработано</p>
         <a class="footer__logoacademy" href="#">htmlacademy</a>
       </div>
-    </div>
     </footer>
   </div>
 </body>

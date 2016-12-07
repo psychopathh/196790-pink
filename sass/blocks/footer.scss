@@ -1,9 +1,9 @@
-@media (max-width: 700px) {
+@media($mobile-width) {
   .footer{
   display: none;
   }
 }
-@media (min-width: 700px) {
+@media($tablet-width) {
   .footer__logo {
     float: left;
   }

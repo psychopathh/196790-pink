@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media($tablet-width) {
   .download-wrap {
     float: left;
     width: 350px;

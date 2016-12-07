@@ -10,21 +10,21 @@
     font-size: 24px;
     font-weight: lighter;
     text-decoration: none;
-    color: $red;
+    color: $text-cericered;
   }
 .contacts__mail {
     font-size: 24px;
     font-weight: lighter;
     text-decoration: none;
-    color: $red;
+    color: $text-cericered;
   }
 .contacts__address {
     font-size: 24px;
     font-weight: lighter;
     text-decoration: none;
-    color: $red;
+    color: $text-cericered;
   }
-@media (min-width: 700px) {
+@media($tablet-width) {
   .contacts__phone {
     float: left;
     width: 215px;
@@ -42,7 +42,7 @@
     margin: 100px auto;
   }
 }
-@media (min-width: 1200px) {
+@media($desktop-widths) {
   .contacts__title {
     font-size: 50px;
   }

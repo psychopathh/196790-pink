@@ -2,8 +2,8 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
-  color: $white;
-  background-color: #283645;
+  color: $color-white;
+  background-color: $color-ebonyclay;
   text-align: center;
   padding-top: 21px;
   padding-bottom: 21px;
@@ -15,7 +15,7 @@
 .main-menu__list {
   padding: 0;
 }
-@media (min-width: 1200px) {
+@media($desktop-widths) {
   .main-header__menu {
     display: none;
   }

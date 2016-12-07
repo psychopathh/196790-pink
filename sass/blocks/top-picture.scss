@@ -7,9 +7,9 @@
 .top-picture__head {
   font-size: 24px;
   font-weight: normal;
-  color: $white;
+  color: $color-white;
 }
-@media (min-width: 700px) {
+@media($tablet-width) {
   .top-picture {
   float: none;
   width: 700px;

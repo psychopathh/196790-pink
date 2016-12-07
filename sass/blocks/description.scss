@@ -6,18 +6,18 @@
   min-height: 190px;
   font-size: 24px;
   font-weight: lighter;
-  color: $blue;
+  color: $color-ebonyclay;
 }
 .description__head {
   font-size: $font-size-text;
   line-height: 24px;
   font-weight: bold;
-  color: $black;
+  color: $color-black;
 }
 .description__text {
   font-size: 14px;
   line-height: 24px;
-  color: $blue;
+  color: $color-ebonyclay;
 }
 .description__picture {
   float: none;
@@ -25,7 +25,7 @@
   height: 280px;
   background: url("http://placehold.it/320x200");
 }
-@media (min-width: 700px) {
+@media($tablet-width) {
   .description {
     min-height: 727px;
   }
@@ -45,7 +45,7 @@
     background: url("http://placehold.it/320x200");
   }
 }
-@media (min-width: 1200px) {
+@media($desktop-widths) {
   .description__picture {
     display: none;
   }

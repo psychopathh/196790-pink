@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 700px) {
+@media($tablet-width) {
   .effect {
     display: block;
     width: 700px;
@@ -16,12 +16,12 @@
   .effect__title {
     font-size: 30px;
     line-height: 36px;
-    color: $black;
+    color: $color-black;
   }
   .effect__text {
     font-size: 14px;
     line-height: 24px;
-    color: $blue;
+    color: $color-ebonyclay;
   }
   .effect__picture{
     float: left;
@@ -30,10 +30,10 @@
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
-    color: $red;
+    color: $text-cericered;
   }
 }
-@media (min-width: 1200px) {
+@media($desktop-widths) {
   .effect__picture {
     float: left;
   }

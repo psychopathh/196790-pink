@@ -2,8 +2,8 @@
   float: none;
   font-size: $font-size-title;
   line-height: 24px;
-  background-color: #1d2631;
-  color: $white;
+  background-color: $color-mirage;
+  color: $color-white;
   min-height: 270px;
 }
 .download__text {
@@ -12,7 +12,7 @@
 .download__head {
   display: none;
 }
-@media (min-width: 700px) {
+@media($tablet-width) {
   .download {
   float: none;
   width: 700px;
@@ -24,16 +24,16 @@
   }
   .download__title {
     font-size: 30px;
-    color: $white;
+    color: $color-white;
   }
 }
-@media (min-width: 1200px) {
+@media($desktop-widths) {
   .download__head {
     display: block;
   }
   .download__title {
     font-size: 30px;
-    color: $white;
+    color: $color-white;
   }
   .download {
   float: none;
