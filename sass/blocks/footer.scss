@@ -1,0 +1,20 @@
+.footer{
+  @media($mobile-width) {
+    display: none;
+  }
+}
+.footer__logo {
+  @media($tablet-width) {
+    float: left;
+  }
+}
+.footer__socials {
+  @media($tablet-width) {
+    display: inline-block;
+  }
+}
+.footer__sign {
+  @media($tablet-width) {
+    float: right;
+  }
+}

@@ -1,18 +1,28 @@
 .reviews {
+  min-height: 352px;
   font-size: $font-size-title;
   line-height: $line-height-text;
   text-align: center;
-  color: $blue;
+  color: $color-ebonyclay;
 }
 .reviews__head {
   font-size: $font-size-text;
   line-height: $line-height-text;
   font-weight: bold;
-  color: #000000;
+  color: $color-black;
 }
 .reviews__item {
   list-style: none;
 }
 .reviews__list {
   padding: 0;
+}
+.reviews__sign {
+  display: none;
+  @media($desktop-widths) {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-ebonyclay;
+  }
 }

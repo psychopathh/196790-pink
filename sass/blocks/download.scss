@@ -1,9 +1,42 @@
 .download {
+  float: none;
   font-size: $font-size-title;
   line-height: 24px;
-  background-color: #1d2631;
-  color: $white;
+  background-color: $color-mirage;
+  color: $color-white;
+  min-height: 270px;
+  @media($tablet-width) {
+    float: none;
+    width: 700px;
+    height: 618px;
+    background: url(http://placehold.it/700x618);
+  }
+  @media($desktop-widths) {
+    float: none;
+    width: 1200px;
+    height: 646px;
+    background: url(http://placehold.it/1200x646);
+  }
 }
 .download__text {
   padding-bottom: 30px;
+}
+.download__head {
+  display: none;
+  @media($tablet-width) {
+    display: block;
+  }
+  @media($desktop-widths) {
+    display: block;
+  }
+}
+  .download__title {
+  @media($tablet-width) {
+    font-size: 30px;
+    color: $color-white;
+  }
+  @media($desktop-widths) {
+    font-size: 30px;
+    color: $color-white;
+  }
 }

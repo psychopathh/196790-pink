@@ -1,24 +1,31 @@
 @mixin decoration-text {
   font-size: $font-size-text;
   line-height: $line-height-text;
-  color: $blue;
+  color: $color-ebonyclay;
 }
 @mixin decoration-title {
   font-size: $font-size-title;
   line-height: $line-height-title;
-  color: $red;
+  color: $text-cericered;
   font-weight: $font-weight-title;
   text-transform:  $text-transform;
 }
 @mixin decoration-label {
   font-size: $font-size-title;
   line-height: $line-height-text;
-  color: $red;
+  color: $text-cericered;
   text-transform: $text-transform;
 }
 @mixin title {
   font-size: 24px;
   font-weight: lighter;
-  color: $blue;
+  color: $color-ebonyclay;
   text-align: $text-align;
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

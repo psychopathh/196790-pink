@@ -1,16 +1,58 @@
 .description__title {
   font-size: 24px;
   font-weight: lighter;
-  color: $blue;
+  color: $color-ebonyclay;
+  @media($desktop-widths) {
+    width: 745px;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
 }
 .description__head {
   font-size: $font-size-text;
   line-height: 24px;
   font-weight: bold;
-  color: $black;
+  color: $color-black;
 }
 .description__text {
   font-size: 14px;
   line-height: 24px;
-  color: $blue;
+  color: $color-ebonyclay;
+}
+.description__picture {
+  float: none;
+  width: 155px;
+  height: 280px;
+  background: url("http://placehold.it/320x200");
+  @media($desktop-widths) {
+    display: none;
+  }
+}
+.description__list {
+    @media($tablet-width) {
+  float: right;
+  width: 300px;
+  }
+    @media($desktop-widths) {
+      width: 900px;
+      height: 200px;
+    }
+}
+.description__item {
+   @media($tablet-width) {
+    float: right;
+    width: 300px;
+  }
+  @media($desktop-widths) {
+    float: left;
+    width: 250px;
+  }
+}
+  .description__picture {
+    @media($tablet-width) {
+      float: left;
+      width: 280px;
+      height: 490px;
+      background: url("http://placehold.it/320x200");
+  }
 }

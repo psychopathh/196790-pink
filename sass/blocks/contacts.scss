@@ -1,5 +1,8 @@
 .contacts__title {
   @include title;
+  @media($desktop-widths) {
+    font-size: 50px;
+  }
 }
 .contacts__text {
   @include decoration-text;
@@ -10,17 +13,59 @@
     font-size: 24px;
     font-weight: lighter;
     text-decoration: none;
-    color: $red;
+    color: $text-cericered;
   }
 .contacts__mail {
     font-size: 24px;
     font-weight: lighter;
     text-decoration: none;
-    color: $red;
+    color: $text-cericered;
+
+    @media($tablet-width) {
+    float: right;
+    width: 215px;
+    height: 70px;
   }
+}
 .contacts__address {
+  @media($tablet-width) {
     font-size: 24px;
     font-weight: lighter;
     text-decoration: none;
-    color: $red;
+    color: $text-cericered;
   }
+}
+.contacts__phone {
+  @media($tablet-width) {
+    float: left;
+    width: 215px;
+    height: 70px;
+    }
+  @media($desktop-widths) {
+    float: left;
+  }
+}
+  .contacts__direction {
+    @media($tablet-width) {
+    float: left;
+    width: 220px;
+    height: 100px;
+    margin: 100px auto;
+  }
+  @media($desktop-widths) {
+    float: left;
+    margin: 0;
+    margin-left: 165px;
+  }
+}
+.contacts__communication {
+  @media($desktop-widths) {
+    float: left;
+    width: 950px;
+  }
+}
+.contacts__email {
+  @media($desktop-widths) {
+  float: right;
+  }
+}

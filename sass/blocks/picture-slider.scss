@@ -1,3 +1,20 @@
 .picture-slider {
-  background-color: #f2f2f2;
+  background-color: $color-concrete;
 }
+.picture-slider__img {
+  @media($desktop-widths) {
+  float: left;
+  }
+}
+.picture-slider__list {
+  @media($desktop-widths) {
+  float: right;
+  }
+}
+.picture-slider__buttons {
+  @media($desktop-widths) {
+  float: right;
+  margin-top: 150px;
+  }
+}
+

@@ -1,4 +1,4 @@
-.price__head {
+.price__headhit {
   margin: 0;
   padding-top: 20px;
   font-size: $font-size-text;
@@ -6,23 +6,44 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: $white;
+  color: $color-white;
 }
-.price__cost {
+.price__costhit {
   margin: 0;
   padding-bottom: 20px;
   font-size: 24px;
   line-height: $line-height-text;
   font-weight: lighter;
-  color: $white;
+  color: $color-white;
   text-align: center;
 }
 .price__itemtop {
-  background-color: #283645;
+  background-color: $color-ebonyclay;
+  @media($tablet-width) {
+    float: right;
+    width: 468px;
+    height: 85px;
+  }
 }
 .price__text {
   font-size: $font-size-title;
   line-height: $line-height-text;
   text-align: left;
-  color: $blue;
+  color: $color-ebonyclay;
+}
+.price__head {
+  display: none;
+   @media($tablet-width) {
+    float: left;
+    width: 150px;
+    height: 85px;
+   }
+}
+.price__cost {
+  display: none;
+  @media($tablet-width) {
+    float: left;
+    width: 150px;
+    height: 85px;
+  }
 }
