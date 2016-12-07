@@ -1,17 +1,10 @@
 .wrapper {
   width: 320px;
   margin: 0 auto;
-  overflow: hidden;
 }
-@media (min-width: 700px) {
+@media($tablet-width) {
   .wrapper {
     width: 700px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1200px) {
-  .wrapper {
-    width: 1200px;
     margin: 0 auto;
   }
 }
