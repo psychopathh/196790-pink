@@ -19,9 +19,7 @@
 }
 .reviews__sign {
   display: none;
-}
-@media($desktop-widths) {
-  .reviews__sign {
+  @media($desktop-widths) {
     display: inline-block;
     font-size: 18px;
     line-height: 30px;

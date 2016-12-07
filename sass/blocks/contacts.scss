@@ -1,5 +1,8 @@
 .contacts__title {
   @include title;
+  @media($desktop-widths) {
+    font-size: 50px;
+  }
 }
 .contacts__text {
   @include decoration-text;
@@ -17,48 +20,52 @@
     font-weight: lighter;
     text-decoration: none;
     color: $text-cericered;
+
+    @media($tablet-width) {
+    float: right;
+    width: 215px;
+    height: 70px;
   }
+}
 .contacts__address {
+  @media($tablet-width) {
     font-size: 24px;
     font-weight: lighter;
     text-decoration: none;
     color: $text-cericered;
   }
-@media($tablet-width) {
-  .contacts__phone {
+}
+.contacts__phone {
+  @media($tablet-width) {
     float: left;
     width: 215px;
     height: 70px;
+    }
+  @media($desktop-widths) {
+    float: left;
   }
-  .contacts__email {
-    float: right;
-    width: 215px;
-    height: 70px;
-  }
+}
   .contacts__direction {
+    @media($tablet-width) {
     float: left;
     width: 220px;
     height: 100px;
     margin: 100px auto;
   }
-}
-@media($desktop-widths) {
-  .contacts__title {
-    font-size: 50px;
-  }
-  .contacts__communication {
-    float: left;
-    width: 950px;
-  }
-  .contacts__phone {
-    float: left;
-  }
-  .contacts__email {
-    float: right;
-  }
-  .contacts__direction {
+  @media($desktop-widths) {
     float: left;
     margin: 0;
     margin-left: 165px;
+  }
+}
+.contacts__communication {
+  @media($desktop-widths) {
+    float: left;
+    width: 950px;
+  }
+}
+.contacts__email {
+  @media($desktop-widths) {
+  float: right;
   }
 }

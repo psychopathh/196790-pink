@@ -26,21 +26,27 @@
   text-transform: uppercase;
   padding-left: 45px;
 }
-@media($tablet-width) {
-  .photo__item {
+.photo__item {
+  @media($tablet-width) {
     float: left;
     margin-right: 20px;
     width: 300px;
   }
-  .photo__img--active {
+}
+.photo__img--active {
+  @media($tablet-width) {
     width: 100%;
   }
-  .photo__item--active {
+}
+.photo__item--active {
+  @media($tablet-width) {
     float: left;
     width: 100%;
   }
+}
   .photo__text--active {
-    float: left;
-    width: 625px;
+    @media($tablet-width) {
+      float: left;
+      width: 625px;
   }
 }

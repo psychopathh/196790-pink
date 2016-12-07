@@ -1,15 +1,20 @@
 .picture-slider {
   background-color: $color-concrete;
 }
-@media($desktop-widths) {
-  .picture-slider__img {
-    float: left;
-  }
-  .picture-slider__list {
-    float: right;
-  }
-  .picture-slider__buttons {
-    float: right;
-    margin-top: 150px;
+.picture-slider__img {
+  @media($desktop-widths) {
+  float: left;
   }
 }
+.picture-slider__list {
+  @media($desktop-widths) {
+  float: right;
+  }
+}
+.picture-slider__buttons {
+  @media($desktop-widths) {
+  float: right;
+  margin-top: 150px;
+  }
+}
+

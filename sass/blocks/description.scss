@@ -1,12 +1,12 @@
-.description {
-  float: none;
-  min-height: 787px;
-}
 .description__title {
-  min-height: 190px;
   font-size: 24px;
   font-weight: lighter;
   color: $color-ebonyclay;
+  @media($desktop-widths) {
+    width: 745px;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
 }
 .description__head {
   font-size: $font-size-text;
@@ -24,42 +24,35 @@
   width: 155px;
   height: 280px;
   background: url("http://placehold.it/320x200");
-}
-@media($tablet-width) {
-  .description {
-    min-height: 727px;
-  }
-  .description__list {
-    float: right;
-    overflow: hidden;
-    width: 300px;
-  }
-  .description__item {
-    float: right;
-    width: 300px;
-  }
-  .description__picture {
-    float: left;
-    width: 280px;
-    height: 490px;
-    background: url("http://placehold.it/320x200");
-  }
-}
-@media($desktop-widths) {
-  .description__picture {
+  @media($desktop-widths) {
     display: none;
   }
-  .description__list {
-    width: 900px;
-    height: 200px;
+}
+.description__list {
+    @media($tablet-width) {
+  float: right;
+  width: 300px;
   }
-  .description__item {
+    @media($desktop-widths) {
+      width: 900px;
+      height: 200px;
+    }
+}
+.description__item {
+   @media($tablet-width) {
+    float: right;
+    width: 300px;
+  }
+  @media($desktop-widths) {
     float: left;
     width: 250px;
   }
-  .description__title {
-    width: 745px;
-    margin-top: 100px;
-    margin-left: 150px;
+}
+  .description__picture {
+    @media($tablet-width) {
+      float: left;
+      width: 280px;
+      height: 490px;
+      background: url("http://placehold.it/320x200");
   }
 }

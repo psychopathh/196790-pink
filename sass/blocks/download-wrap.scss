@@ -1,5 +1,5 @@
-@media($tablet-width) {
-  .download-wrap {
+.download-wrap {
+  @media($tablet-width) {
     float: left;
     width: 350px;
     height: 450px;

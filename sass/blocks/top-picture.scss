@@ -3,17 +3,15 @@
   width: 320px;
   height: 420px;
   background: url(http://placehold.it/320x420);
+  @media($tablet-width) {
+    float: none;
+    width: 700px;
+    height: 618px;
+    background: url(http://placehold.it/700x618);
+  }
 }
 .top-picture__head {
   font-size: 24px;
   font-weight: normal;
   color: $color-white;
-}
-@media($tablet-width) {
-  .top-picture {
-  float: none;
-  width: 700px;
-  height: 618px;
-  background: url(http://placehold.it/700x618);
-  }
 }

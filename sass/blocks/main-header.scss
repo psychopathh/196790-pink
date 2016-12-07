@@ -1,8 +1,8 @@
 .main-header__img {
   float: right;
 }
-@media($desktop-widths) {
-  .main-header__menu {
+.main-header__menu {
+  @media($desktop-widths) {
     display: none;
   }
 }

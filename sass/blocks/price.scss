@@ -19,6 +19,11 @@
 }
 .price__itemtop {
   background-color: $color-ebonyclay;
+  @media($tablet-width) {
+    float: right;
+    width: 468px;
+    height: 85px;
+  }
 }
 .price__text {
   font-size: $font-size-title;
@@ -28,22 +33,15 @@
 }
 .price__head {
   display: none;
-}
-.price__cost {
-  display: none;
-}
-@media($tablet-width) {
-  .price__itemtop {
-    float: right;
-    width: 468px;
-    height: 85px;
-  }
-  .price__head {
+   @media($tablet-width) {
     float: left;
     width: 150px;
     height: 85px;
-  }
-  .price__cost {
+   }
+}
+.price__cost {
+  display: none;
+  @media($tablet-width) {
     float: left;
     width: 150px;
     height: 85px;

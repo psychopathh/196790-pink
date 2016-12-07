@@ -11,15 +11,15 @@
 }
 .main-menu__item {
   list-style: none;
+  @media($desktop-widths) {
+    display: inline-block;
+  }
 }
 .main-menu__list {
   padding: 0;
 }
-@media($desktop-widths) {
-  .main-header__menu {
+.main-header__menu {
+  @media($desktop-widths) {
     display: none;
-  }
-  .main-menu__item {
-    display: inline-block;
   }
 }
