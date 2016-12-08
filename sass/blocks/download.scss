@@ -1,10 +1,11 @@
 .download {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin-top: -65px;
+  flex-direction: column;
+  align-items: center;
   font-size: $font-size-title;
   line-height: 24px;
-  background-color: $color-mirage;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0px 176px, url("../img/bg-back-mobile@1x.jpg") no-repeat;
   color: $color-white;
   @media($tablet-width) {
     width: 700px;
@@ -17,6 +18,10 @@
     background: url(http://placehold.it/1200x646);
   }
 }
+.download__list {
+    background-color: $color-mirage;
+    margin-top: 462px;
+  }
 .download__text {
   margin-left: 44px;
   width: 240px;
