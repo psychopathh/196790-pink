@@ -1,5 +1,15 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 725px;
+}
 .description__title {
+  width: 204px;
+  margin-top: 40px;
+  margin-bottom: 105px;
   font-size: 24px;
+  text-align: center;
   font-weight: lighter;
   color: $color-ebonyclay;
   @media($desktop-widths) {
@@ -19,15 +29,6 @@
   line-height: 24px;
   color: $color-ebonyclay;
 }
-.description__picture {
-  float: none;
-  width: 155px;
-  height: 280px;
-  background: url("http://placehold.it/320x200");
-  @media($desktop-widths) {
-    display: none;
-  }
-}
 .description__list {
     @media($tablet-width) {
   float: right;
@@ -39,6 +40,9 @@
     }
 }
 .description__item {
+  width: 274px;
+  margin-bottom: 23px;
+  text-align: center;
    @media($tablet-width) {
     float: right;
     width: 300px;
@@ -47,6 +51,9 @@
     float: left;
     width: 250px;
   }
+}
+.description__item:last-child {
+  margin-bottom: 313px;
 }
   .description__picture {
     @media($tablet-width) {

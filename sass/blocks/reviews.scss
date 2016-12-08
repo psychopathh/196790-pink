@@ -1,15 +1,22 @@
 .reviews {
-  min-height: 352px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: $font-size-title;
   line-height: $line-height-text;
   text-align: center;
   color: $color-ebonyclay;
 }
 .reviews__head {
+  margin-top: 43px;
   font-size: $font-size-text;
   line-height: $line-height-text;
   font-weight: bold;
   color: $color-black;
+}
+.reviews__blockquote {
+  width: 280px;
+  margin-bottom: 25px;
 }
 .reviews__item {
   list-style: none;
