@@ -1,8 +1,12 @@
-.main-header__img {
-  float: right;
-}
 .main-header__menu {
+  padding-top: 24px;
+  padding-right: 20px;
   @media($desktop-widths) {
     display: none;
   }
+}
+.main-header__control {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d2632;
 }
