@@ -12,10 +12,10 @@
       <div class="main-menu">
         <div class="main-menu__control">
           <div class="main-logo">
-            <a class="main-logo__button" href="#"><img class="main-logo__img" src="../img/logo-pink-white-mobile.svg" alt="Логотип"></a>
+            <a class="main-logo__button" href="#"><img class="main-logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип"></a>
           </div>
           <div class="main-close">
-            <a class="main-close__button" href="#"><img class="main-close__img" src="../img/icon-menu-cross.svg" alt="крестик"></a>
+            <a class="main-close__button" href="#"><img class="main-close__img" src="img/icon-menu-cross.svg" alt="крестик"></a>
           </div>
         </div>
         <nav class="main-menu__nav">
@@ -38,9 +38,9 @@
     </header>
     <main>
       <section class="download">
-        <div class="download__list">
+        <div class="download__items">
           <div class="download__head">
-            <h2 class="download__title">Взгляните на жизнь иначе</h2>
+            <h2 class="download__title">Взгляните на жизнь иначе!</h2>
           </div>
           <div class="download-control">
             <a class="download-control__button" href="#">Скачать приложение</a>
@@ -104,34 +104,28 @@
       </section>
       <section class="price">
         <div class="slider">
-          <div class="price__items">
-            <div class="price__itemtop">
-              <p class="price__head">База</p>
-              <p class="price__cost">1,99 USD</p>
-              <p class="price__headhit price__head">Стандарт</p>
-              <p class="price__costhit">3,99 USD</p>
-              <p class="price__head">Анлим</p>
-              <p class="price__cost">9,99 USD</p>
-            </div>
-            <div class="price__itembottom">
-                <div class="price__item">
-                  <p class="price__text">розовый фильтр</p>
-                </div>
-                <div class="price__item">
-                  <p class="price__text">смайлики</p>
-                </div>
-                <div class="price__item">
-                  <p class="price__text">комментарии</p>
-                </div>
-            </div>
-          </div>
+          <table class="price__list">
+            <tr class="price__title">
+              <td class="price__head price__headhit">Стандарт</td>
+              <td class="price__costhit">3,99 USD</td>
+            </tr>
+            <tr class="price__item">
+              <td class="price__text">розовый фильтр</td>
+            </tr>
+            <tr class="price__item">
+              <td class="price__text">смайлики</td>
+            </tr>
+            <tr class="price__item">
+              <td class="price__text">комментарии</td>
+            </tr>
+          </table>
           <input class="slider__input" type="radio" name="price">
           <input class="slider__input" type="radio" name="price" checked>
           <input class="slider__input" type="radio" name="price">
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__communication">
           <div class="contacts__phone">
             <p class="contacts__text">Звоните:</p>
@@ -147,7 +141,7 @@
           </div>
         </div>
         <div class="contacts-location">
-          <img class="contacts-location__picture" src="http://placehold.it/320x200" alt="map"/>
+          <img class="contacts-location__picture" height="200" width="320" src="img/bg-map-mobile@1x.jpg" alt="map">
         </div>
       </section>
     </main>

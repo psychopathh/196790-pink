@@ -1,3 +1,12 @@
+.price__list {
+  display: flex;
+  width: 276px;
+  flex-direction: column;
+}
+tbody {
+  display: flex;
+  flex-direction: column;
+}
 .price__headhit {
   margin: 0;
   padding-top: 20px;
@@ -17,13 +26,11 @@
   color: $color-white;
   text-align: center;
 }
-.price__itemtop {
-  background-color: $color-ebonyclay;
-  @media($tablet-width) {
-    float: right;
-    width: 468px;
-    height: 85px;
-  }
+.price__title {
+  background: $color-ebonyclay;
+}
+.price__item--active {
+  display: flex;
 }
 .price__text {
   font-size: $font-size-title;
@@ -32,7 +39,6 @@
   color: $color-ebonyclay;
 }
 .price__head {
-  display: none;
    @media($tablet-width) {
     float: left;
     width: 150px;

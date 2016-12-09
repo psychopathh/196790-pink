@@ -11,4 +11,8 @@
 .download-control {
   margin-top: 45px;
   margin-bottom: 47px;
+  @media($tablet-width) {
+    margin-left: 37px;
+    margin-bottom: 55px;
+  }
 }

@@ -9,31 +9,43 @@
   color: $color-white;
   z-index: 1;
   @media($tablet-width) {
-    width: 700px;
-    height: 618px;
-    background: url(http://placehold.it/700x618);
+    margin-top: 0;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0px 176px, url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    background-size: cover;
   }
   @media($desktop-widths) {
     width: 1200px;
     height: 646px;
-    background: url(http://placehold.it/1200x646);
   }
 }
-.download__list {
+.download__items {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $color-mirage;
     margin-top: 462px;
-  }
+    @media($tablet-width) {
+      background: none;
+      margin-top: 0;
+      padding-bottom: 242px;
+      align-items: flex-start;
+    }
+}
 .download__text {
   width: 240px;
   margin-bottom: 28px;
+  @media($tablet-width) {
+    margin-left: 38px;
+  }
 }
 .download__head {
   display: none;
   @media($tablet-width) {
     display: block;
+    margin-bottom: -23px;
+    line-height: 45px;
+    text-align: center;
+    width: 193px;
   }
   @media($desktop-widths) {
     display: block;
@@ -41,7 +53,10 @@
 }
   .download__title {
   @media($tablet-width) {
-    font-size: 30px;
+    margin-left: 95px;
+    width: 190px;
+    font-size: 40px;
+    font-weight: lighter;
     color: $color-white;
   }
   @media($desktop-widths) {

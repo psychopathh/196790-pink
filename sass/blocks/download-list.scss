@@ -5,6 +5,9 @@
   justify-content: space-between;
   text-align: center;
   font-size: 0;
+  @media($tablet-width) {
+    margin-left: 82px;
+  }
 }
 .download-list__system--ios {
   width: 50px;
