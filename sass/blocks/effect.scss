@@ -1,24 +1,23 @@
 .effect {
   display: none;
   @media($tablet-width) {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
     width: 700px;
     height: 345px;
   }
 }
 .effect__item {
   @media($tablet-width) {
-    float: right;
-    width: 303px;
-    height: 215px;
  }
   @media($tablet-width) {
-    float: right;
-    margin-right: 350px;
  }
 }
 .effect__title {
   @media($tablet-width) {
+    width: 168px;
+    margin-top: 93px;
+    margin-bottom: 10px;
     font-size: 30px;
     line-height: 36px;
     color: $color-black;
@@ -26,6 +25,7 @@
 }
 .effect__text {
   @media($tablet-width) {
+    width: 310px;
     font-size: 14px;
     line-height: 24px;
     color: $color-ebonyclay;
@@ -33,17 +33,16 @@
 }
 .effect__picture{
   @media($tablet-width) {
-    float: left;
+    margin-top: 55px;
+    margin-right: 55px;
   }
   @media($desktop-widths) {
-    float: left;
   }
 }
 .effect__link {
   @media($tablet-width) {
     font-size: 14px;
     line-height: 24px;
-    text-decoration: none;
     color: $text-cericered;
   }
 }

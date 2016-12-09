@@ -6,6 +6,9 @@
   line-height: $line-height-text;
   text-align: center;
   color: $color-ebonyclay;
+  @media($tablet-width) {
+    margin-top: 33px;
+  }
 }
 .reviews__head {
   margin-top: 43px;
@@ -13,19 +16,40 @@
   line-height: $line-height-text;
   font-weight: bold;
   color: $color-black;
+  @media($tablet-width) {
+    margin-top: -7px;
+    margin-bottom: 0;
+    font-size: 20px;
+    order: 2;
+  }
 }
 .reviews__blockquote {
   width: 280px;
   margin-bottom: 25px;
+  @media($tablet-width) {
+    font-size: 18px;
+    width: 630px;
+    order: 3;
+  }
 }
 .reviews__item {
   list-style: none;
+    @media($tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .reviews__list {
   padding: 0;
 }
 .reviews__sign {
   display: none;
+  @media($tablet-width) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    order: 1;
+  }
   @media($desktop-widths) {
     display: inline-block;
     font-size: 18px;
