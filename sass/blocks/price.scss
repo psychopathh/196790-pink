@@ -1,3 +1,8 @@
+.price {
+  @media($desktop-widths) {
+    background: $color-concrete;
+  }
+}
 .price__list {
   display: flex;
   width: 276px;

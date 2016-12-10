@@ -15,4 +15,8 @@
     margin-left: 37px;
     margin-bottom: 55px;
   }
+  @media($desktop-widths) {
+    margin-left: 130px;
+    margin-bottom: 75px;
+  }
 }

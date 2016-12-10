@@ -1,20 +1,102 @@
-.footer{
+.footer--active {
   @media($mobile-width) {
-    display: none;
+  display: none;
+  }
+}
+.footer{
+  @media($tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 .footer__logo {
   @media($tablet-width) {
-    float: left;
+    margin-top: 34px;
+    margin-left: -20px;
+    margin-right: -30px;
+  }
+  @media($desktop-widths) {
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 .footer__socials {
   @media($tablet-width) {
-    display: inline-block;
+    display: flex;
+    margin-top: 34px;
+    margin-bottom: 37px;
+  }
+  @media($desktop-widths) {
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 .footer__sign {
   @media($tablet-width) {
-    float: right;
+    display: flex;
+    margin-top: 34px;
+    margin-left: -15px;
+  }
+  @media($desktop-widths) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+.footer__button {
+  @media($tablet-width) {
+    font-size: 0;
+  }
+}
+.footer__button--twitter {
+  @media($tablet-width) {
+    display: block;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon-twitter.svg) no-repeat center;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+  }
+}
+.footer__button--facebook {
+  @media($tablet-width) {
+    display: block;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon-facebook.svg) no-repeat center;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+  }
+}
+.footer__button--play {
+  @media($tablet-width) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon-youtube.svg) no-repeat center;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+  }
+}
+.footer__logoacademy {
+  @media($tablet-width) {
+    display: block;
+    font-size: 0;
+    width: 36px;
+    height: 36px;
+    background: url("../img/htmlacademy.svg") no-repeat;
+  }
+  @media($desktop-widths) {
+    margin-top: 8px;
+  }
+}
+.footer__text {
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  color: $color-ebonyclay;
+  @media($tablet-width) {
+    margin-right: 10px;
   }
 }

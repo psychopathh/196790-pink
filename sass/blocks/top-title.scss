@@ -1,0 +1,17 @@
+.top-title {
+  margin-top: -64px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+}
+.top-title__head {
+  width: 180px;
+  margin: 0 auto;
+}
+.top-title__text {
+  padding-top: 98px;
+  padding-bottom: 84px;
+  margin: 0;
+  font-size: 24px;
+  color: $color-white;
+  text-align: center;
+  font-weight: lighter;
+}

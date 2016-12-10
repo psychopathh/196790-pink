@@ -1,6 +1,13 @@
+.desc {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 13px;
+  padding-bottom: 30px;
+}
 .desc__title {
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   color: $color-ebonyclay;
+  text-align: center;
 }

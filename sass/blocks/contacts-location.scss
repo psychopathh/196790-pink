@@ -1,0 +1,10 @@
+.contacts-location__picture {
+  @media($tablet-width) {
+    height: 375px;
+    width: 700px;
+  }
+  @media($desktop-widths) {
+    height: 506px;
+    width: 1200px;
+  }
+}

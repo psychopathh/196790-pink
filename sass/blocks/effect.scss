@@ -3,15 +3,16 @@
   @media($tablet-width) {
     display: flex;
     flex-direction: row-reverse;
-    width: 700px;
-    height: 345px;
+  }
+  @media($desktop-widths) {
+    background: $color-concrete;
   }
 }
 .effect__item {
-  @media($tablet-width) {
- }
-  @media($tablet-width) {
- }
+  @media($desktop-widths) {
+    width: 540px;
+    margin-right: 175px;
+  }
 }
 .effect__title {
   @media($tablet-width) {
@@ -22,6 +23,9 @@
     line-height: 36px;
     color: $color-black;
   }
+  @media($desktop-widths) {
+    width: 300px;
+  }
 }
 .effect__text {
   @media($tablet-width) {
@@ -30,13 +34,21 @@
     line-height: 24px;
     color: $color-ebonyclay;
   }
+  @media($desktop-widths) {
+    width: 540px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 .effect__picture{
   @media($tablet-width) {
     margin-top: 55px;
     margin-right: 55px;
+    margin-left: 45px;
   }
   @media($desktop-widths) {
+    margin-right: 56px;
+    margin-bottom: 67px;
   }
 }
 .effect__link {
@@ -44,5 +56,8 @@
     font-size: 14px;
     line-height: 24px;
     color: $text-cericered;
+  }
+  @media($desktop-widths) {
+    font-size: 18px;
   }
 }

@@ -1,20 +1,44 @@
 .picture-slider {
   background-color: $color-concrete;
 }
-.picture-slider__img {
+.picture-slider__picture {
+  padding-top: 20px;
+  padding-left: 18px;
+  margin-bottom: 35px;
   @media($desktop-widths) {
-  float: left;
+
   }
 }
 .picture-slider__list {
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  justify-content: space-between;
+  font-size: 0;
   @media($desktop-widths) {
-  float: right;
+
   }
 }
 .picture-slider__buttons {
   @media($desktop-widths) {
-  float: right;
-  margin-top: 150px;
+
   }
 }
-
+.picture-slider__icon--width {
+  display: block;
+  width: 52px;
+  height: 50px;
+  background: url("../img/icon-editor-crop.svg") no-repeat;
+}
+.picture-slider__icon--fill {
+  display: block;
+  width: 45px;
+  height: 50px;
+  background: url("../img/icon-editor-fill.svg") no-repeat;
+}
+.picture-slider__icon--bright {
+  display: block;
+  width: 34px;
+  height: 50px;
+  background: url("../img/icon-editor-contrast.svg") no-repeat;
+}
