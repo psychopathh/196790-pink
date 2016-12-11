@@ -16,3 +16,10 @@
     display: none;
   }
 }
+.main-header__control--active {
+  @media($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}

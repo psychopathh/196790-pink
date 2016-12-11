@@ -1,6 +1,9 @@
 .top-title {
   margin-top: -64px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  @media($tablet-width) {
+    background-size: cover;
+  }
 }
 .top-title__head {
   width: 180px;
