@@ -12,6 +12,7 @@
 .picture-slider__list {
   display: flex;
   margin: 0 auto;
+  margin-bottom: 20px;
   width: 200px;
   justify-content: space-between;
   font-size: 0;
@@ -41,4 +42,41 @@
   width: 34px;
   height: 50px;
   background: url("../img/icon-editor-contrast.svg") no-repeat;
+}
+.picture-slider__band {
+  padding-bottom: 35px;
+  margin-bottom: 37px;
+  border-bottom: 2px solid #dddfe0;
+}
+.picture-slider__buttons {
+  display: flex;
+  flex-direction: column;
+}
+.picture-slider__btn--post {
+  padding: 16px 35px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  width: 282px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $text-cericered;
+  text-decoration: none;
+  background: $color-concrete;
+  border: 3px solid $text-cericered;
+  border-radius: 50px;
+}
+.picture-slider__btn--cancel {
+  padding: 16px 35px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  width: 282px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #dddfe0;
+  text-decoration: none;
+  background: $color-concrete;
+  border: 3px solid #dddfe0;
+  border-radius: 50px;
 }

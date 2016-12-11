@@ -4,6 +4,8 @@
   }
 }
 .footer{
+  display: flex;
+  flex-direction: column;
   @media($tablet-width) {
     display: flex;
     flex-direction: row;
@@ -11,6 +13,10 @@
   }
 }
 .footer__logo {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
   @media($tablet-width) {
     margin-top: 34px;
     margin-left: -20px;
@@ -22,6 +28,10 @@
   }
 }
 .footer__socials {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
   @media($tablet-width) {
     display: flex;
     margin-top: 34px;
@@ -33,6 +43,9 @@
   }
 }
 .footer__sign {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
   @media($tablet-width) {
     display: flex;
     margin-top: 34px;
@@ -44,43 +57,44 @@
   }
 }
 .footer__button {
+  font-size: 0;
   @media($tablet-width) {
     font-size: 0;
   }
 }
 .footer__button--twitter {
-  @media($tablet-width) {
-    display: block;
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    background: url(../img/icon-twitter.svg) no-repeat center;
-    border: 3px solid #e9ebec;
-    border-radius: 50%;
-  }
+  display: block;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  background: url(../img/icon-twitter.svg) no-repeat center;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
 }
 .footer__button--facebook {
-  @media($tablet-width) {
-    display: block;
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    background: url(../img/icon-facebook.svg) no-repeat center;
-    border: 3px solid #e9ebec;
-    border-radius: 50%;
-  }
+  display: block;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  background: url(../img/icon-facebook.svg) no-repeat center;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
 }
 .footer__button--play {
-  @media($tablet-width) {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background: url(../img/icon-youtube.svg) no-repeat center;
-    border: 3px solid #e9ebec;
-    border-radius: 50%;
-  }
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/icon-youtube.svg) no-repeat center;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
 }
 .footer__logoacademy {
+  display: block;
+  margin-top: 6px;
+  font-size: 0;
+  width: 36px;
+  height: 36px;
+  background: url("../img/htmlacademy.svg") no-repeat;
   @media($tablet-width) {
     display: block;
     font-size: 0;
@@ -93,10 +107,12 @@
   }
 }
 .footer__text {
+  margin-right: 10px;
+  margin-bottom: 50px;
   font-size: $font-size-title;
   line-height: $line-height-title;
   color: $color-ebonyclay;
   @media($tablet-width) {
-    margin-right: 10px;
+  margin-right: 10px;
   }
 }

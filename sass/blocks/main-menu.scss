@@ -1,3 +1,8 @@
+.main-menu--active {
+  @media($tablet-width) {
+    display: none;
+  }
+}
 .main-menu {
   display: flex;
   flex-direction: column;
