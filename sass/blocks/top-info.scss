@@ -2,6 +2,8 @@
   font-size: $font-size-title;
   line-height: $line-height-text;
   color: $color-ebonyclay;
+  @media ($tablet-width) {
+  }
 }
 .top-info__title {
   margin: 0 auto;
@@ -11,4 +13,10 @@
   line-height: $line-height-text;
   font-weight: normal;
   text-align: center;
+  @media ($tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 90px;
+    width: 450px;
+    font-size: 18px;
+  }
 }

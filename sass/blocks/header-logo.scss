@@ -2,4 +2,8 @@
   padding-top: 24px;
   padding-bottom: 15px;
   padding-left: 20px;
+  @media($tablet-width) {
+    padding-top: 44px;
+    padding-bottom: 39px;
+  }
 }
