@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
-  <div class="wrapper">
-    <header class="main-header">
+  <header class="main-header">
+    <div class="wrapper">
       <div class="main-menu main-menu--active">
         <div class="main-menu__control">
           <div class="main-logo">
@@ -27,27 +27,33 @@
           </ul>
         </nav>
       </div>
-        <div class="main-header__control main-header__control--active">
-          <div class="header-logo">
-            <a class="header-logo__button" href="#"><img class="header-logo__img" src="./img/logo-pink-white-mobile.svg" alt="Логотип"></a>
-          </div>
-          <div class="main-header__menu">
-            <a class="main-header__button" href="#"><img class="main-header__img" src="./img/icon-menu-burger.svg" alt="меню"></a>
-          </div>
+      <div class="main-header__control main-header__control--active">
+        <div class="header-logo">
+          <a class="header-logo__button" href="#"><img class="header-logo__img" src="./img/logo-pink-white-mobile.svg" alt="Логотип"></a>
         </div>
-    </header>
-    <main>
-      <div class="top-title">
+        <div class="main-header__menu">
+          <a class="main-header__button" href="#"><img class="main-header__img" src="./img/icon-menu-burger.svg" alt="меню"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="top-title">
+      <div class="wrapper">
         <div class="top-title__head">
           <h1 class="top-title__text">
             Фотографии пользователей
           </h1>
         </div>
       </div>
-      <div class="top-info">
+    </div>
+    <div class="top-info">
+      <div class="wrapper">
         <h2 class="top-info__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
       </div>
-      <section class="photo">
+    </div>
+    <section class="photo">
+      <div class="wrapper">
         <div class="photo__item photo__item--active">
           <img class="photo__img photo__img--active" width="100%" src="http://placehold.it/320x137" alt="panorama"/>
         </div>
@@ -133,7 +139,7 @@
         </div>
       </div>
       <div class="photo__item">
-      <img class="photo__img" width="100%"  src="http://placehold.it/285x180" alt="car"/>
+        <img class="photo__img" width="100%"  src="http://placehold.it/285x180" alt="car"/>
         <div class="photo-wrap">
           <p class="photo__sign">
             Надежда<span class="photo__span"> (45 часов назад)</span>
@@ -148,10 +154,13 @@
       </div>
     </div>
   </section>
-    <section class="desc">
+  <section class="desc">
+    <div class="wrapper">
       <h2 class="desc__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
-    </section>
-    <section class="picture-slider">
+    </div>
+  </section>
+  <section class="picture-slider">
+    <div class="wrapper">
       <form class="form">
         <div class="picture-slider__picture">
           <img class="picture-slider__img" src="http://placehold.it/280x375" alt="дорога">
@@ -169,9 +178,11 @@
           <button class="picture-slider__btn picture-slider__btn--cancel">Отмена</button>
         </div>
       </form>
-    </section>
-    </main>
-    <footer class="footer">
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
       <div class="footer__logotype">
         <a class="footer__logo" href="#"><img src="img/logo-pink-blue-mobile.svg" alt="logo"></a>
       </div>
@@ -184,7 +195,7 @@
         <p class="footer__text">Разработано</p>
         <a class="footer__logoacademy" href="#">htmlacademy</a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
