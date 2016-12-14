@@ -1,10 +1,20 @@
 .main-logo {
   margin-top: 45px;
   margin-left: 20px;
+  @media($tablet-width) {
+    margin-top: 24px;
+    margin-left: 38px;
+  }
   @media($desktop-widths) {
     display: block;
     margin-top: 42px;
     margin-left: 205px;
     margin-right: 130px;
+  }
+}
+.main-logo__img {
+  @media($tablet-width) {
+    width: 150px;
+    height: 45px;
   }
 }

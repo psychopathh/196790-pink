@@ -1,8 +1,11 @@
 .top-title {
-  margin-top: -64px;
+  margin-top: -66px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
+  }
   @media($tablet-width) {
-    background-size: cover;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     margin-top: -110px;
     padding-top: 86px;
     padding-bottom: 57px;

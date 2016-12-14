@@ -3,7 +3,13 @@
   padding-bottom: 15px;
   padding-left: 20px;
   @media($tablet-width) {
-    padding-top: 44px;
+    padding-top: 18px;
     padding-bottom: 39px;
+  }
+}
+.header-logo__img {
+  @media($tablet-width) {
+    height: 50px;
+    width: 160px;
   }
 }
