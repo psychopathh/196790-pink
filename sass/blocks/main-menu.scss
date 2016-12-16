@@ -10,18 +10,14 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
-  background-color: $color-ebonyclay;
   text-align: center;
   text-transform: uppercase;
   @media($desktop-widths) {
-    position: relative;
     flex-direction: row;
     justify-content: flex-start;
     line-height: 18px;
     font-weight: normal;
     text-transform: none;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 2;
   }
 }
 .main-menu__item {

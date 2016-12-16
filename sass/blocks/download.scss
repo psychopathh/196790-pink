@@ -1,20 +1,15 @@
 .download {
-  position: relative;
   display: flex;
-  margin-top: -65px;
   flex-direction: column;
   font-size: $font-size-title;
   line-height: 24px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0px 176px, url("../img/bg-back-mobile@1x.jpg") no-repeat;
   color: $color-white;
-  z-index: 1;
   @media($tablet-width) {
-    margin-top: 0;
     background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0px 176px, url("../img/bg-back-mobile@1x.jpg") no-repeat;
     background-size: cover;
   }
   @media($desktop-widths) {
-    margin-top: -108px;
   }
 }
 .download__items {
