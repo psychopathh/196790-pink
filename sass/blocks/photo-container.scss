@@ -1,0 +1,21 @@
+.photo-container {
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  @media($tablet-width) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 89%;
+  }
+  @media($desktop-widths) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 98%;
+  }
+}

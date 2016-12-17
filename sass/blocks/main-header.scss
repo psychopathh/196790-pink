@@ -3,6 +3,7 @@
   width: 100%;
   background-color: $color-ebonyclay;
   @media($desktop-widths) {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }

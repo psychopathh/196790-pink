@@ -1,21 +1,22 @@
 .photo-wrap {
+  margin-top: -3px;
   background-color: $color-concrete;
-  width: 280px;
-  margin-top: -17px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 20px;
   @media($tablet-width) {
     margin-bottom: 47px;
-    width: 300px;
   }
 }
 .photo-wrap--active {
   @media($tablet-width) {
-    margin: -3px auto;
+    margin-top: -3px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 630px;
+    width: 89%;
+  }
+  @media($desktop-widths) {
+    width: 98%;
   }
 }

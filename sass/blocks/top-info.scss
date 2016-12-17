@@ -19,4 +19,7 @@
     width: 450px;
     font-size: 18px;
   }
+  @media($desktop-widths) {
+    width: 580px;
+  }
 }
