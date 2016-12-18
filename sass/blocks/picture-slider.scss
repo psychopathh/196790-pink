@@ -18,45 +18,82 @@
 }
 .picture-slider__list {
   display: flex;
-  margin: 0 auto;
+  flex-direction: column;
   margin-bottom: 75px;
-  width: 200px;
-  justify-content: space-between;
   font-size: 0;
+  align-items: center;
   @media($tablet-width) {
     display: flex;
     margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 40%;
+    width: 43%;
+  }
+}
+.picture-slider__roster {
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+  margin-bottom: 35px;
+  @media($tablet-width) {
+    flex-wrap: wrap;
+    width: 89%;
+  }
+}
+.picture-slider__item {
+  @media($tablet-width) {
+    width: 100%;
+    border-bottom: 1px solid #dddfe0;
   }
 }
 .picture-slider__buttons {
   padding-top: 37px;
+  width: 100%;
   border-top: 1px solid #dddfe0;
+  @media($tablet-width) {
+    border: none;
+  }
 }
 .picture-slider__icon--width {
   display: block;
   width: 52px;
   height: 50px;
   background: url("../img/icon-editor-crop.svg") no-repeat 0;
+  @media($tablet-width) {
+    background-size: 23px;
+    width: 23px;
+    height: 23px;
+  }
 }
 .picture-slider__icon--fill {
   display: block;
   width: 45px;
   height: 50px;
   background: url("../img/icon-editor-fill.svg") no-repeat 0;
+  @media($tablet-width) {
+    background-size: 23px;
+    width: 23px;
+    height: 23px;
+  }
 }
 .picture-slider__icon--bright {
   display: block;
   width: 34px;
   height: 50px;
   background: url("../img/icon-editor-contrast.svg") no-repeat 0;
+  @media($tablet-width) {
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
 }
 .picture-slider__band {
-  padding-bottom: 35px;
-  margin-bottom: 37px;
-  border-bottom: 1px solid #dddfe0;
+  position: relative;
+  width: 75%;
+  margin-bottom: 34px;
+  font-size: 0;
+  height: 2px;
+  background-color: #000000;
 }
 .picture-slider__buttons {
   display: flex;
@@ -89,4 +126,15 @@
   background: $color-concrete;
   border: 3px solid #dddfe0;
   border-radius: 50px;
+}
+.picture-slider__span {
+  position: absolute;
+  display: block;
+  background-color: $color-white;
+  width: 14px;
+  height: 14px;
+  border: 2px solid red;
+  border-radius: 50%;
+  top: -6px;
+  right: 32px;
 }
