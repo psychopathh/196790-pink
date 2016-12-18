@@ -1,52 +1,62 @@
 .picture-slider {
   background-color: $color-concrete;
+  @media($desktop-widths) {
+    width: 79%;
+    margin: 0 auto;
+  }
 }
 .picture-slider__picture {
-  padding-top: 20px;
-  padding-left: 18px;
   margin-bottom: 35px;
-  @media($desktop-widths) {
-
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-top: 19px;
+  @media($tablet-width) {
+    margin: 0;
+    padding: 0;
+    width: 50%;
   }
 }
 .picture-slider__list {
   display: flex;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 75px;
   width: 200px;
   justify-content: space-between;
   font-size: 0;
-  @media($desktop-widths) {
-
+  @media($tablet-width) {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
   }
 }
 .picture-slider__buttons {
-  @media($desktop-widths) {
-
-  }
+  padding-top: 37px;
+  border-top: 1px solid #dddfe0;
 }
 .picture-slider__icon--width {
   display: block;
   width: 52px;
   height: 50px;
-  background: url("../img/icon-editor-crop.svg") no-repeat;
+  background: url("../img/icon-editor-crop.svg") no-repeat 0;
 }
 .picture-slider__icon--fill {
   display: block;
   width: 45px;
   height: 50px;
-  background: url("../img/icon-editor-fill.svg") no-repeat;
+  background: url("../img/icon-editor-fill.svg") no-repeat 0;
 }
 .picture-slider__icon--bright {
   display: block;
   width: 34px;
   height: 50px;
-  background: url("../img/icon-editor-contrast.svg") no-repeat;
+  background: url("../img/icon-editor-contrast.svg") no-repeat 0;
 }
 .picture-slider__band {
   padding-bottom: 35px;
   margin-bottom: 37px;
-  border-bottom: 2px solid #dddfe0;
+  border-bottom: 1px solid #dddfe0;
 }
 .picture-slider__buttons {
   display: flex;

@@ -1,0 +1,16 @@
+.footer-container {
+    width: 59%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media($tablet-width) {
+      width: 96%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media($desktop-widths) {
+      width: 100%;
+    }
+}

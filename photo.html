@@ -214,15 +214,17 @@
       <div class="wrapper">
         <form class="form">
           <div class="picture-slider__picture">
-            <img class="picture-slider__img" src="http://placehold.it/280x375" alt="дорога">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@2x.jpg 2x, img/photo-7-desktop@1x.jpg 1x">
+            <source media="(min-width: 700px)" srcset="img/photo-7-tablet@2x.jpg 2x, img/photo-7-tablet@1x.jpg 1x">
+            <source srcset="img/photo-7-mobile@2x.jpg 2x, img/photo-7-mobile@1x.jpg 1x">
+            <img class="photo__img" width="320" height="140" src="img/photo-7-mobile@1x.jpg" alt="дорога">
+            </picture>
           </div>
           <div class="picture-slider__list">
             <a class="picture-slider__icon picture-slider__icon--width" href="#">width</a>
             <a class="picture-slider__icon picture-slider__icon--fill" href="#">fill</a>
             <a class="picture-slider__icon picture-slider__icon--bright" href="#">bright</a>
-          </div>
-          <div class="picture-slider__band">
-            <img class="picture-slider__pic" src="http://placehold.it/320x3" alt="полоска">
           </div>
           <div class="picture-slider__buttons">
             <button class="picture-slider__btn picture-slider__btn--post">Запостить</button>
@@ -234,17 +236,24 @@
   </main>
   <footer class="footer">
     <div class="wrapper">
-      <div class="footer__logotype">
-        <a class="footer__logo" href="#"><img src="img/logo-pink-blue-mobile.svg" alt="logo"></a>
-      </div>
-      <div class="footer__socials">
-        <a class="footer__button footer__button--twitter" href="#">twitter</a>
-        <a class="footer__button footer__button--facebook" href="#">facebook</a>
-        <a class="footer__button footer__button--play" href="#">play</a>
-      </div>
-      <div class="footer__sign">
-        <p class="footer__text">Разработано</p>
-        <a class="footer__logoacademy" href="#">htmlacademy</a>
+      <div class="footer-container">
+        <div class="footer__logotype">
+          <a class="footer__logo" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+                <img  class="main-logo__img" src="img/logo-pink-blue-mobile.svg" width="150" height="42" alt="logo">
+            </picture>
+          </a>
+        </div>
+        <div class="footer__socials">
+          <a class="footer__button footer__button--twitter" href="#">twitter</a>
+          <a class="footer__button footer__button--facebook" href="#">facebook</a>
+          <a class="footer__button footer__button--play" href="#">play</a>
+        </div>
+        <div class="footer__sign">
+          <p class="footer__text">Разработано</p>
+          <a class="footer__logoacademy" href="#">htmlacademy</a>
+        </div>
       </div>
     </div>
   </footer>

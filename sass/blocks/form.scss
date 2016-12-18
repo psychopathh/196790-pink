@@ -1,0 +1,12 @@
+.form {
+  @media($tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 88%;
+  }
+}
