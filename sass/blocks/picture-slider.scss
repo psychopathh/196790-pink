@@ -130,11 +130,12 @@
 .picture-slider__span {
   position: absolute;
   display: block;
-  background-color: $color-white;
+  background-color: $color-concrete;
   width: 14px;
   height: 14px;
   border: 2px solid red;
   border-radius: 50%;
   top: -6px;
   right: 32px;
+  cursor: pointer;
 }
