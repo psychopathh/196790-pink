@@ -1,65 +1,12 @@
 .description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: $color-concrete url("../img/iphone-screen-mobile@1x.png") no-repeat center 725px;
-  @media($tablet-width) {
-    display: flex;
-    align-items: flex-end;
-    background: $color-concrete url(../img/iphone-screen-mobile@1x.png) no-repeat 25px 263px;
-    background-size: 257px;
-  }
-  @media($desktop-widths) {
-    align-items: center;
-    background: $color-concrete;
-  }
-}
-.description__title {
-  width: 204px;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  text-align: center;
-  font-weight: lighter;
-  color: $color-ebonyclay;
-  @media($tablet-width) {
-    align-self: center;
-    font-size: 40px;
-    width: 590px;
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-  @media($desktop-widths) {
-    width: 735px;
-    font-size: 50px;
-    margin-top: 70px;
-  }
-}
-.description__titletext {
-  width: 204px;
-  font-size: 24px;
-  margin-bottom: 98px;
-  text-align: center;
-  font-weight: lighter;
-  color: $color-ebonyclay;
-  @media($tablet-width) {
-    align-self: center;
-    width: 335px;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 124px;
-  }
-  @media($desktop-widths) {
-    width: 417px;
-    font-size: 50px;
-    margin-bottom: 433px;
-  }
+  background: $color-concrete;
 }
 .description__head {
   font-size: $font-size-text;
   line-height: 24px;
   font-weight: bold;
   color: $color-black;
+  margin: 0;
   @media($tablet-width) {
     margin: 0;
   }
@@ -80,15 +27,14 @@
   }
 }
 .description__list {
-  @media($desktop-widths) {
-    display: flex;
-    width: 921px;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .description__item {
   width: 274px;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
   text-align: center;
   @media($tablet-width) {
     display: flex;
@@ -102,12 +48,6 @@
     width: 240px;
   }
 }
-.description__item:last-child {
-  margin-bottom: 313px;
-  @media($tablet-width) {
-    margin-bottom: 29px;
-  }
-  @media($desktop-widths) {
-    margin-right: 0;
-  }
+.description__img {
+  height: auto;
 }

@@ -7,6 +7,10 @@
   text-decoration: $text-decor;
   border: 3px solid $color-white;
   border-radius: 50px;
+  @media($tablet-width) {
+    padding: 12px 30px;
+    font-size: 21px;
+  }
 }
 .download-control {
   margin-top: 45px;
