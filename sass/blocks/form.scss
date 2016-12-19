@@ -9,4 +9,7 @@
   margin-right: auto;
   width: 88%;
   }
+  @media($desktop-widths) {
+    width: 83%;
+  }
 }
