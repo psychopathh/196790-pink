@@ -77,38 +77,51 @@
     </section>
     <section class="description">
       <div class="wrapper">
-        <div class="description__list">
-          <div class="description__item">
-            <p class="description__head">Поднимает настроение</p>
-            <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <div class="description-container">
+          <div class="description__list">
+            <div class="description__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@2x.png 2x, img/iphone-screen-1-desktop@1x.png 1x">
+                <img class="description__img" width="184" height="302" src="img/iphone-screen-1-desktop@1x.png" alt="panorama">
+              </picture>
+              <p class="description__head">Поднимает настроение</p>
+              <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="description__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@2x.png 2x, img/iphone-screen-2-desktop@1x.png 1x">
+                <img class="description__img" width="184" height="302" src="img/iphone-screen-2-desktop@1x.png" alt="panorama">
+              </picture>
+              <p class="description__head">Меняет мир вокруг</p>
+              <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="description__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@2x.png 2x, img/iphone-screen-3-desktop@1x.png 1x">
+                <img class="description__img" width="184" height="302" src="img/iphone-screen-3-desktop@1x.png" alt="panorama">
+              </picture>
+              <p class="description__head">Заводит новых друзей</p>
+              <p class="description__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
-          <div class="description__item">
-            <p class="description__head">Меняет мир вокруг</p>
-            <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="description__item">
-            <p class="description__head">Заводит новых друзей</p>
-            <p class="description__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          <div class="description__picture description__picture--active">
           </div>
         </div>
-        <picture class="description__picture description__picture--active">
-          <source media="(min-width: 700px)" srcset="img/iphone-screen-3-tablet@2x.png 2x, img/iphone-screen-3-tablet@1x.png 1x">
-          <source srcset="img/iphone-screen-mobile@2x.png 2x, img/iphone-screen-mobile@1x.png 1x">
-          <img class="description__img description__img--active" src="img/iphone-screen-mobile@1x.png" width="160" height="280" alt="телефон">
-        </picture>
       </div>
     </section>
     <section class="effect">
       <div class="wrapper">
-        <div class="effect__item">
-          <h2 class="effect__title">Эффект на 24 часа!</h2>
-          <p class="effect__text">
-          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a class="effect__link" href="#">Узнать больше об исследовании</a>
-        </div>
-        <div class="effect__picture">
-            <img class="effect__img" src="http://placehold.it/310x285" alt="часы"/>
+        <div class="effect-container">
+          <div class="effect__item">
+            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <p class="effect__text">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
+          <div class="effect__picture">
+              <img class="effect__img" width="275" height="240" src="img/icon-timer.svg" alt="часы"/>
+          </div>
         </div>
       </div>
     </section>

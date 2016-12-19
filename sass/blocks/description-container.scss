@@ -1,0 +1,6 @@
+.description-container {
+  @media($tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

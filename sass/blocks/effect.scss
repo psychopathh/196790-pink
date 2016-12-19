@@ -2,16 +2,15 @@
   display: none;
   @media($tablet-width) {
     display: flex;
-    flex-direction: row-reverse;
   }
   @media($desktop-widths) {
     background: $color-concrete;
   }
 }
 .effect__item {
+  @media($tablet-width) {
+  }
   @media($desktop-widths) {
-    width: 540px;
-    margin-right: 175px;
   }
 }
 .effect__title {
@@ -29,7 +28,7 @@
 }
 .effect__text {
   @media($tablet-width) {
-    width: 310px;
+    width: 308px;
     font-size: 14px;
     line-height: 24px;
     color: $color-ebonyclay;
@@ -43,12 +42,11 @@
 .effect__picture{
   @media($tablet-width) {
     margin-top: 55px;
-    margin-right: 55px;
-    margin-left: 45px;
+    margin-right: 17px;
   }
   @media($desktop-widths) {
-    margin-right: 56px;
     margin-bottom: 67px;
+    margin-right: 100px;
   }
 }
 .effect__link {
@@ -59,5 +57,11 @@
   }
   @media($desktop-widths) {
     font-size: 18px;
+  }
+}
+.effect__img {
+  @media($desktop-widths) {
+    height: 346px;
+    width: 302px;
   }
 }

@@ -9,9 +9,9 @@
      background: url("../img/iphone-hand-mobile@2x.png") no-repeat 0px 176px, url("../img/bg-back-mobile@2x.jpg") no-repeat;
   }
   @media($tablet-width) {
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 0px 180px, url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 0px 184px, url("../img/bg-back-tablet@1x.jpg") no-repeat;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../img/iphone-hand-tablet@2x.png") no-repeat 0px 180px, url("../img/bg-back-tablet@2x.jpg") no-repeat;
+      background: url("../img/iphone-hand-tablet@2x.png") no-repeat 0px 184px, url("../img/bg-back-tablet@2x.jpg") no-repeat;
     }
   }
   @media($desktop-widths) {
