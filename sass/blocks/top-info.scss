@@ -23,3 +23,23 @@
     width: 580px;
   }
 }
+.top-info__span {
+  display: none;
+  @media($tablet-width) {
+    display: inline-block;
+  }
+  @media($desktop-widths) {
+    display: inline-block;
+  }
+}
+.top-info__title--active {
+  width: 275px;
+  padding-top: 47px;
+  padding-bottom: 27px;
+  @media($tablet-width) {
+    width: 490px;
+  }
+  @media($desktop-widths) {
+    width: 756px;
+  }
+}

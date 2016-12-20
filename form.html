@@ -7,81 +7,128 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
-  <div class="wrapper">
-    <header class="main-header">
-      <a class="main-header__logo" href="#"><img class="header-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
-      <div class="main-header__menu">
-        <a class="main-header__button" href="#"><img class="main-header__img" src="http://placehold.it/90x35" alt="меню"></a>
-      </div>
-      <div class="main-menu">
-        <div class="main-logo">
-          <a class="main-logo__button" href="#"><img class="main-logo__img" src="http://placehold.it/90x35" alt="Логотип"></a>
-        </div>
-        <div class="main-close">
-          <a class="main-close__button" href="#"><img class="main-close__img" src="http://placehold.it/90x35" alt="крестик"></a>
+  <header class="main-header">
+    <div class="wrapper">
+      <div class="main-menu main-menu--active">
+        <div class="main-menu__control">
+          <div class="main-logo">
+            <a class="main-logo__button" href="index.html">
+            <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img  class="main-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="logo">
+            </picture>
+            </a>
+          </div>
+          <div class="main-close">
+            <a class="main-close__button" href="#"><img class="main-close__img" src="img/icon-menu-cross.svg" alt="крестик"></a>
+          </div>
         </div>
         <nav class="main-menu__nav">
           <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__item" href="index.html">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__item" href="photo.html">Фотографии</a></li>
-            <li class="main-menu__item"><a class="main-menu__item" href="form.html">Конкурс</a></li>
-            <li class="main-menu__item"><a class="main-menu__item" href="#">Html academy</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
-    </header>
-    <main>
-      <div class="top-picture">
-        <img class="top-picture__img" src="http://placehold.it/320x230" alt="изображение домов"/>
-        <div class="top-picture__title">
-          <h1 class="top-picture__head">
-            Конкурс на самое безбашеное путешествие с Пинк
+      <div class="main-header__control main-header__control--active">
+        <div class="header-logo">
+          <a class="header-logo__button" href="index.html">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img  class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="logo">
+          </picture>
+          </a>
+        </div>
+        <div class="main-header__menu">
+          <a class="main-header__button" href="#"><img class="main-header__img" src="./img/icon-menu-burger.svg" alt="меню"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="top-picture">
+      <div class="wrapper">
+        <div class="top-picture__head">
+          <h1 class="top-picture__text">
+            Конкурс на самое безбашенное путешествие с Пинк
           </h1>
         </div>
       </div>
-      <div class="registration">
-        <h2 class="registration__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
+    </div>
+    <div class="top-info">
+      <div class="wrapper">
+        <h2 class="top-info__title top-info__title--active">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="top-info__span">Пожалуйста, заполните форму ниже:</span></h2>
+      </div>
+    </div>
+    <div class="registration">
+      <div class="wrapper">
         <form class="form">
           <fieldset class="info">
 
-            <label class="info__label" for="surname">Фамилия:</label>
-            <input class="info__control" type="text" id="surname" placeholder="Укажите фамилию *">
+            <div class="info__item">
+              <label class="info__label" for="surname">Фамилия:</label>
+              <input class="info__control" type="text" id="surname" placeholder="Укажите фамилию *">
+            </div>
 
-            <label class="info__label" for="name">Имя:</label>
-            <input class="info__control" type="text" id="name" placeholder="Введите ваше имя *">
+            <div class="info__item">
+              <label class="info__label" for="name">Имя:</label>
+              <input class="info__control" type="text" id="name" placeholder="Введите ваше имя *">
+            </div>
 
-            <label class="info__label" for="patronymic">Отчество:</label>
-            <input class="info__control" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+            <div class="info__item">
+              <label class="info__label" for="patronymic">Отчество:</label>
+              <input class="info__control" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+            </div>
 
           </fieldset>
-          <fieldset class="achievments">
+          <fieldset class="achievements">
             <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
 
-            <input class="achievements__control" type="checkbox" id="shark" checked>
-            <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
+            <div class="achievements__item">
+              <input class="achievements__control" type="checkbox" id="shark" checked>
+              <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
+            </div>
 
-            <input class="achievements__control" type="checkbox" id="burn" checked>
-            <label class="achievements__label" for="burn">Обгорел на пляже</label>
+            <div class="achievements__item">
+              <input class="achievements__control" type="checkbox" id="burn" checked>
+              <label class="achievements__label" for="burn">Обгорел на пляже</label>
+            </div>
 
-            <input class="achievements__control" type="checkbox" id="chack">
-            <label class="achievements__label" for="chack">Видел чака норриса</label>
+            <div class="achievements__item">
+              <input class="achievements__control" type="checkbox" id="chack">
+              <label class="achievements__label" for="chack">Видел чака норриса</label>
+            </div>
 
-            <input class="achievements__control" type="checkbox" id="souvenir">
-            <label class="achievements__label" for="souvenir">Накупил сувениров</label>
+            <div class="achievements__item">
+              <input class="achievements__control" type="checkbox" id="souvenir">
+              <label class="achievements__label" for="souvenir">Накупил сувениров</label>
+            </div>
 
-            <input class="achievements__control" type="checkbox" id="tower" checked>
-            <label class="achievements__label" for="tower">Удержал башню</label>
+            <div class="achievements__item">
+              <input class="achievements__control" type="checkbox" id="tower" checked>
+              <label class="achievements__label" for="tower">Удержал башню</label>
+            </div>
 
-            <input class="achievements__control" type="checkbox" id="hotel">
+            <div class="achievements__item">
+              <input class="achievements__control" type="checkbox" id="hotel">
+              <label class="achievements__label" for="hotel">Разгромил отель</label>
+            </div>
 
           </fieldset>
           <fieldset class="adress">
 
-            <label class="adress__label"  for="number">Номер телефона</label>
-            <input class="adress__input" type="text" id="number" placeholder="Номер, пожалуйста">
+            <div class="adress__item">
+              <label class="adress__label"  for="number">Номер телефона</label>
+              <input class="adress__input" type="text" id="number" placeholder="Номер, пожалуйста">
+            </div>
 
-            <label class="adress__label"  for="mail">Адресок почты</label>
-            <input class="adress__input" type="text" id="mail" placeholder="Введите почту *">
+            <div class="adress__item">
+              <label class="adress__label"  for="mail">Адресок почты</label>
+              <input class="adress__input" type="text" id="mail" placeholder="Введите почту *">
+            </div>
 
           </fieldset>
           <fieldset class="interview">
@@ -109,19 +156,30 @@
           </fieldset>
         </form>
       </div>
-    </main>
-    <footer class="footer">
-      <a class="footer__logo"><img src="http://placehold.it/180x50" alt="logo">Pink</a>
-      <div class="socials">
-        <a class="socials__button socials__button--twitter" href="#">twitter</a>
-        <a class="socials__button socials__button--facebook" href="#">facebook</a>
-        <a class="socials__button socials__button--play" href="#">play</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-container">
+        <div class="footer__logotype">
+          <a class="footer__logo" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+                <img  class="main-logo__img" src="img/logo-pink-blue-mobile.svg" width="150" height="42" alt="logo">
+            </picture>
+          </a>
+        </div>
+        <div class="footer__socials">
+          <a class="footer__button footer__button--twitter" href="#">twitter</a>
+          <a class="footer__button footer__button--facebook" href="#">facebook</a>
+          <a class="footer__button footer__button--play" href="#">play</a>
+        </div>
+        <div class="footer__sign">
+          <p class="footer__text">Разработано</p>
+          <a class="footer__logoacademy" href="#">htmlacademy</a>
+        </div>
       </div>
-      <div class="footer-sign">
-        <p class="footer-sign__text">Разработано</p>
-        <a class="footer-sign__logoacademy" href="#">htmlacademy</a>
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>

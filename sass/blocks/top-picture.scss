@@ -1,0 +1,46 @@
+.top-picture {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat ;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat ;
+  }
+  @media($tablet-width) {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    padding-top: 86px;
+    padding-bottom: 57px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+    }
+  }
+  @media($desktop-widths) {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
+    }
+  }
+}
+.top-picture__head {
+  width: 230px;
+  margin: 0 auto;
+  @media($tablet-width) {
+    width: 475px;
+  }
+  @media($desktop-widths) {
+    width: 750px;
+  }
+}
+.top-picture__text {
+  padding-top: 98px;
+  padding-bottom: 60px;
+  margin: 0;
+  font-size: 24px;
+  color: $color-white;
+  text-align: center;
+  font-weight: 300;
+  @media($tablet-width) {
+    font-size: 50px;
+    padding-bottom: 25px;
+  }
+  @media($desktop-widths) {
+    padding-bottom: 38px;
+  }
+}

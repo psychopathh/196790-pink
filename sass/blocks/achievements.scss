@@ -1,6 +1,16 @@
+.achievements {
+  display: flex;
+  border: none;
+  background: $color-concrete;
+}
 .achievements__title {
   @include decoration-title;
 }
 .achievements__label {
   @include decoration-text;
+}
+.achievements__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
