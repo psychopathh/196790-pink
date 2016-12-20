@@ -9,21 +9,21 @@
 <body class="body">
   <header class="main-header">
     <div class="wrapper">
-      <div class="main-menu">
+      <div class="main-menu main-menu--active">
         <div class="main-menu__control">
-            <div class="main-logo">
-              <a class="main-logo__button" href="#">
-              <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
-                <img  class="main-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="logo">
-              </picture>
-              </a>
-            </div>
-            <div class="main-close">
-              <a class="main-close__button" href="#"><img class="main-close__img" src="img/icon-menu-cross.svg" alt="крестик"></a>
-            </div>
+          <div class="main-logo">
+            <a class="main-logo__button" href="index.html">
+            <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img  class="main-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="logo">
+            </picture>
+            </a>
           </div>
+          <div class="main-close">
+            <a class="main-close__button" href="#"><img class="main-close__img" src="img/icon-menu-cross.svg" alt="крестик"></a>
+          </div>
+        </div>
         <nav class="main-menu__nav">
           <ul class="main-menu__list">
             <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
@@ -33,11 +33,11 @@
           </ul>
         </nav>
       </div>
-      <div class="main-header__control">
+      <div class="main-header__control main-header__control--active">
         <div class="header-logo">
-          <a class="header-logo__button" href="#">
+          <a class="header-logo__button" href="index.html">
           <picture>
-            <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img  class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="logo">
           </picture>
           </a>
@@ -50,22 +50,24 @@
   </header>
   <main>
     <section class="download">
-      <div class="download__items">
+      <div class="wrapper">
         <div class="download__head">
           <h2 class="download__title">Взгляните на жизнь иначе!</h2>
         </div>
-        <div class="download-control">
-          <a class="download-control__button" href="#">Скачать приложение</a>
-        </div>
-        <div class="download-list">
-          <a class="download-list__system download-list__system--ios" href="#">ios</a>
-          <a class="download-list__system download-list__system--android" href="#">android</a>
-          <a class="download-list__system download-list__system--windows" href="#">windows</a>
-        </div>
-        <div class="download__text">
-          <p class="download__info">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+        <div class="download__items">
+          <div class="download-control">
+            <a class="download-control__button" href="#">Скачать приложение</a>
+          </div>
+          <div class="download-list">
+            <a class="download-list__system download-list__system--ios" href="#">ios</a>
+            <a class="download-list__system download-list__system--android" href="#">android</a>
+            <a class="download-list__system download-list__system--windows" href="#">windows</a>
+          </div>
+          <div class="download__text">
+            <p class="download__info">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -81,7 +83,7 @@
           <div class="description__list">
             <div class="description__item">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@2x.png 2x, img/iphone-screen-1-desktop@1x.png 1x">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@2x.png 2x, img/iphone-screen-1-desktop@1x.png 1x">
                 <img class="description__img" width="184" height="302" src="img/iphone-screen-1-desktop@1x.png" alt="panorama">
               </picture>
               <p class="description__head">Поднимает настроение</p>
@@ -89,7 +91,7 @@
             </div>
             <div class="description__item">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@2x.png 2x, img/iphone-screen-2-desktop@1x.png 1x">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@2x.png 2x, img/iphone-screen-2-desktop@1x.png 1x">
                 <img class="description__img" width="184" height="302" src="img/iphone-screen-2-desktop@1x.png" alt="panorama">
               </picture>
               <p class="description__head">Меняет мир вокруг</p>
@@ -97,7 +99,7 @@
             </div>
             <div class="description__item">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@2x.png 2x, img/iphone-screen-3-desktop@1x.png 1x">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@2x.png 2x, img/iphone-screen-3-desktop@1x.png 1x">
                 <img class="description__img" width="184" height="302" src="img/iphone-screen-3-desktop@1x.png" alt="panorama">
               </picture>
               <p class="description__head">Заводит новых друзей</p>
@@ -145,25 +147,20 @@
     </section>
     <section class="price">
       <div class="wrapper">
-        <div class="slider">
-          <table class="price__list">
-            <tr class="price__title">
-              <td class="price__head price__headhit">Стандарт</td>
-              <td class="price__costhit">3,99 USD</td>
-            </tr>
-            <tr class="price__item">
-              <td class="price__text">розовый фильтр</td>
-            </tr>
-            <tr class="price__item">
-              <td class="price__text">смайлики</td>
-            </tr>
-            <tr class="price__item">
-              <td class="price__text">комментарии</td>
-            </tr>
-          </table>
-          <input class="slider__input" type="radio" name="price">
-          <input class="slider__input" type="radio" name="price" checked>
-          <input class="slider__input" type="radio" name="price">
+        <div class="price-table">
+          <div class="price-table__col">
+            <div class="price-table__title rice-table__title--inactive">
+            </div>
+            <div class="price-table__item">
+              <p class="price-table__text price-table__text--inactive">Розовый фильтр</p>
+            </div>
+            <div class="price-table__item">
+              <p class="price-table__text price-table__text--inactive">Смайлики</p>
+            </div>
+            <div class="price-table__item">
+              <p class="price-table__text price-table__text--inactive">Комментарии</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -192,17 +189,24 @@
   </main>
   <footer class="footer footer--active">
     <div class="wrapper">
-      <div class="footer__logotype">
-        <a class="footer__logo" href="#"><img src="img/logo-pink-blue-mobile.svg" alt="logo"></a>
-      </div>
-      <div class="footer__socials">
-        <a class="footer__button footer__button--twitter" href="#">twitter</a>
-        <a class="footer__button footer__button--facebook" href="#">facebook</a>
-        <a class="footer__button footer__button--play" href="#">play</a>
-      </div>
-      <div class="footer__sign">
-        <p class="footer__text">Разработано</p>
-        <a class="footer__logoacademy" href="#">htmlacademy</a>
+      <div class="footer-container">
+        <div class="footer__logotype">
+          <a class="footer__logo" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+                <img  class="main-logo__img" src="img/logo-pink-blue-mobile.svg" width="150" height="42" alt="logo">
+            </picture>
+          </a>
+        </div>
+        <div class="footer__socials">
+          <a class="footer__button footer__button--twitter" href="#">twitter</a>
+          <a class="footer__button footer__button--facebook" href="#">facebook</a>
+          <a class="footer__button footer__button--play" href="#">play</a>
+        </div>
+        <div class="footer__sign">
+          <p class="footer__text">Разработано</p>
+          <a class="footer__logoacademy" href="#">htmlacademy</a>
+        </div>
       </div>
     </div>
   </footer>

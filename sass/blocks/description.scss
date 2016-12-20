@@ -7,9 +7,6 @@
   font-weight: bold;
   color: $color-black;
   margin: 0;
-  @media($tablet-width) {
-    margin: 0;
-  }
   @media($desktop-widths) {
     font-size: 30px;
     line-height: 30px;

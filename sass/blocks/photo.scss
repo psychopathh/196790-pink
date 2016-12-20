@@ -13,7 +13,6 @@
 .photo__sign--active {
   @media($tablet-width) {
   padding-top: 27px;
-  width: 173px;
   order: 1;
   }
 }
@@ -52,15 +51,18 @@
 }
 .photo__like--active {
   @media($tablet-width) {
-  padding-top: 24px;
+  margin-top: 24px;
+  padding-bottom: 0;
   order: 2;
   width: 195px;
-  background: url("../img/icon-heart.svg") no-repeat 155px 29px;
+  background: url("../img/icon-heart.svg") no-repeat 155px 5px;
+  }
+  @media($desktop-widths) {
+    padding-left: 52px;
   }
 }
 .photo__text--active {
   @media($tablet-width) {
-  margin-top: -14px;
   margin-bottom: 12px;
   order: 3;
   width: 545px;

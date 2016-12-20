@@ -1,8 +1,8 @@
 .download-list {
-  display: flex;
   margin-bottom: 25px;
-  width: 203px;
+  display: flex;
   justify-content: space-between;
+  width: 203px;
   text-align: center;
   font-size: 0;
   @media($tablet-width) {
