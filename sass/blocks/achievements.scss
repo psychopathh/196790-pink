@@ -1,16 +1,35 @@
 .achievements {
-  display: flex;
+  min-height: 604px;
   border: none;
   background: $color-concrete;
 }
 .achievements__title {
+  margin: 0;
+  width: 218px;
+  text-align: center;
   @include decoration-title;
 }
 .achievements__label {
   @include decoration-text;
 }
 .achievements__item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+}
+.achievements input[type="checkbox"] {
+  display: none;
+}
+.achievements input:checked+label:before {
+  display: inline-block;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: $color-white url("../img/icon-yes.svg") no-repeat center;
+  border: 2px solid #e5e5e5;
+}
+.achievements input+label:before {
+  display: inline-block;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: $color-white;
+  border: 2px solid #e5e5e5;
 }

@@ -9,3 +9,24 @@
   line-height: $line-height-text;
   color: $color-ebonyclay;
 }
+.interview input[type="radio"] {
+  display: none;
+}
+.interview input:checked+label:before {
+  display: inline-block;
+  content: "";
+  width: 37px;
+  height: 37px;
+  background: url("../img/icon-map-marker.svg") no-repeat center;
+  border: 2px solid #e5e5e5;
+  border-radius: 50px;
+}
+.interview input+label:before {
+  display: inline-block;
+  content: "";
+  width: 37px;
+  height: 37px;
+  background: $color-white;
+  border: 2px solid #e5e5e5;
+  border-radius: 50px;
+}

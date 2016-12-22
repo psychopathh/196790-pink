@@ -85,7 +85,9 @@
 
           </fieldset>
           <fieldset class="achievements">
-            <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
+            <div class="achievements__head">
+              <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
+            </div>
 
             <div class="achievements__item">
               <input class="achievements__control" type="checkbox" id="shark" checked>
@@ -134,13 +136,13 @@
           <fieldset class="interview">
             <h2 class="interview__title">С каким приложением путешествовали?</h2>
 
-            <input class="interview__control" type="radio" id="ios" checked>
+            <input class="interview__control" name="platform" type="radio" id="ios" checked>
             <label class="interview__label" for="ios">Pink для iOS</label>
 
-            <input class="interview__control" type="radio" id="android">
+            <input class="interview__control" name="platform" type="radio" id="android">
             <label class="interview__label" for="android">Pink на Android</label>
 
-            <input class="interview__control" type="radio" id="windows">
+            <input class="interview__control" name="platform" type="radio" id="windows">
             <label class="interview__label" for="windows">Windows Phone</label>
 
           </fieldset>
