@@ -1,0 +1,43 @@
+.send {
+  display: flex;
+  min-height: 130px;
+  border: none;
+  @media($tablet-width) {
+    display: flex;
+    width: 97%;
+    order: 6;
+  }
+}
+.send__item {
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+.send__span {
+  color: $text-cericered;
+}
+.send__button {
+  padding: 19px 48px;
+  text-decoration: none;
+  font-size: $font-size-text;
+  font-weight: 600;
+  line-height: $line-height-text;
+  background-color: #2aab6d;
+  color: $color-white;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.send__info {
+  text-align: center;
+  font-size: $font-size-title;
+  line-height: $line-height-text;
+  text-transform: uppercase;
+  color: $color-ebonyclay;
+}
+.send__list {
+  display: flex;
+  flex-direction: column;
+  @media($tablet-width) {
+  justify-content: space-between;
+  }
+}

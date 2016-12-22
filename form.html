@@ -89,73 +89,107 @@
               <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
             </div>
 
-            <div class="achievements__item">
-              <input class="achievements__control" type="checkbox" id="shark" checked>
-              <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
-            </div>
+            <div class="achievements__list">
 
-            <div class="achievements__item">
-              <input class="achievements__control" type="checkbox" id="burn" checked>
-              <label class="achievements__label" for="burn">Обгорел на пляже</label>
-            </div>
+              <div class="achievements__item">
+                <input class="achievements__control" type="checkbox" id="shark" checked>
+                <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
+              </div>
 
-            <div class="achievements__item">
-              <input class="achievements__control" type="checkbox" id="chack">
-              <label class="achievements__label" for="chack">Видел чака норриса</label>
-            </div>
+              <div class="achievements__item">
+                <input class="achievements__control" type="checkbox" id="burn" checked>
+                <label class="achievements__label" for="burn">Обгорел на пляже</label>
+              </div>
 
-            <div class="achievements__item">
-              <input class="achievements__control" type="checkbox" id="souvenir">
-              <label class="achievements__label" for="souvenir">Накупил сувениров</label>
-            </div>
+              <div class="achievements__item">
+                <input class="achievements__control" type="checkbox" id="chack">
+                <label class="achievements__label" for="chack">Видел чака норриса</label>
+              </div>
 
-            <div class="achievements__item">
-              <input class="achievements__control" type="checkbox" id="tower" checked>
-              <label class="achievements__label" for="tower">Удержал башню</label>
-            </div>
+              <div class="achievements__item">
+                <input class="achievements__control" type="checkbox" id="souvenir">
+                <label class="achievements__label" for="souvenir">Накупил сувениров</label>
+              </div>
 
-            <div class="achievements__item">
-              <input class="achievements__control" type="checkbox" id="hotel">
-              <label class="achievements__label" for="hotel">Разгромил отель</label>
+              <div class="achievements__item">
+                <input class="achievements__control" type="checkbox" id="tower" checked>
+                <label class="achievements__label" for="tower">Удержал башню</label>
+              </div>
+
+              <div class="achievements__item">
+                <input class="achievements__control" type="checkbox" id="hotel">
+                <label class="achievements__label" for="hotel">Разгромил отель</label>
+              </div>
+
             </div>
 
           </fieldset>
           <fieldset class="adress">
 
-            <div class="adress__item">
-              <label class="adress__label"  for="number">Номер телефона</label>
-              <input class="adress__input" type="text" id="number" placeholder="Номер, пожалуйста">
+            <div class="adress__head">
+              <h2 class="adress__title">Контактная информация</h2>
             </div>
 
-            <div class="adress__item">
-              <label class="adress__label"  for="mail">Адресок почты</label>
-              <input class="adress__input" type="text" id="mail" placeholder="Введите почту *">
+            <div class="adress__list">
+
+              <div class="adress__item">
+                <label class="adress__label"  for="number">Номер телефона</label>
+                <input class="adress__input" type="text" id="number" placeholder="Номер, пожалуйста">
+              </div>
+
+              <div class="adress__item">
+                <label class="adress__label"  for="mail">Адрес<span class="adress__span">ок</span> почты</label>
+                <input class="adress__input" type="text" id="mail" placeholder="Введите почту *">
+              </div>
+
             </div>
 
           </fieldset>
           <fieldset class="interview">
-            <h2 class="interview__title">С каким приложением путешествовали?</h2>
+            <div class="interview__head">
+              <h2 class="interview__title">С каким приложением путешествовали?</h2>
+            </div>
+            <div class="interview__list">
+              <div class="interview__item">
+                <input class="interview__control" name="platform" type="radio" id="ios" checked>
+                <label class="interview__label" for="ios">Pink для iOS</label>
+              </div>
 
-            <input class="interview__control" name="platform" type="radio" id="ios" checked>
-            <label class="interview__label" for="ios">Pink для iOS</label>
+              <div class="interview__item">
+                <input class="interview__control" name="platform" type="radio" id="android">
+                <label class="interview__label" for="android">Pink на Android</label>
+              </div>
 
-            <input class="interview__control" name="platform" type="radio" id="android">
-            <label class="interview__label" for="android">Pink на Android</label>
-
-            <input class="interview__control" name="platform" type="radio" id="windows">
-            <label class="interview__label" for="windows">Windows Phone</label>
+              <div class="interview__item">
+                <input class="interview__control" name="platform" type="radio" id="windows">
+                <label class="interview__label" for="windows">Windows Phone</label>
+              </div>
+            </div>
 
           </fieldset>
           <fieldset class="textarea">
-            <h2 class="textarea__title">Опишите свои эмоции</h2>
+            <div class="textarea__head">
+              <h2 class="textarea__title">Опишите свои эмоции</h2>
+            </div>
 
+            <div class="textarea__item">
               <textarea class="textarea__content" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
 
-              <a class="textarea__button" href="#">Отправить форму</a>
+            </fieldset>
+            <fieldset class="send">
+            <div class="send__list">
 
-              <p class="textarea__info"><span class="textarea__span">*</span> -- Обязательные поля</p>
+              <div class="send__item">
+                <a class="send__button" href="#">Отправить форму</a>
+              </div>
 
-          </fieldset>
+              <div class="send__distortion">
+                <p class="send__info"><span class="send__span">*</span> — Обязательные поля</p>
+              </div>
+
+            </div>
+            </fieldset>
         </form>
       </div>
     </div>

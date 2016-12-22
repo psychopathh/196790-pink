@@ -1,22 +1,40 @@
 .adress {
   display: flex;
   padding: 0;
-  margin-bottom: 45px;
+  min-height: 285px;
   border: none;
+  @media($tablet-width) {
+    position: relative;
+    margin-bottom: 65px;
+    border: 2px solid #e5e5e5;
+    order: 3;
+    z-index: 1;
+  }
+}
+.adress__list {
+  @media($tablet-width) {
+    padding-top: 45px;
+  }
 }
 .adress__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media($tablet-width) {
+    flex-direction: column-reverse;
+  }
 }
 .adress__label {
   @include decoration-label;
-  margin-bottom: 5px;
-  margin-top: 12px;
+  padding-bottom: 5px;
+  padding-top: 12px;
   font-size: $font-size-title;
   line-height: $line-height-text;
   color: $text-cericered;
   text-transform: uppercase;
+  @media($tablet-width) {
+    padding-bottom: 24px;
+  }
 }
 .adress__input {
   @include decoration-text;
@@ -26,4 +44,45 @@
   padding-right: 35px;
   border: 2px solid #e5e5e5;
   border-radius: 3px;
+  @media($tablet-width) {
+    width: 437px;
+  }
+}
+.adress__head {
+  display: none;
+  @media($tablet-width) {
+    display: flex;
+    position: absolute;
+    width: 25%;
+    top: -10px;
+    left: 212px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #ffffff;
+    z-index: 2;
+  }
+}
+.adress__title {
+  @media($tablet-width) {
+  margin: 0;
+  width: 100%px;
+  text-align: center;
+  @include decoration-title;
+  }
+}
+.adress__span {
+  @media($tablet-width) {
+    display: none;
+  }
+}
+.adress__input:before {
+  display: none;
+  @media($tablet-width) {
+    display: inline-block;
+    content: "";
+    width: 64px;
+    height: 62px;
+    background: url("../img/icon-phone.svg") no-repeat center;
+    background-color: #e5e5e5;
+  }
 }

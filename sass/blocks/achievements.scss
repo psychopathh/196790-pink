@@ -1,35 +1,81 @@
 .achievements {
+  display: flex;
   min-height: 604px;
   border: none;
   background: $color-concrete;
+  @media($tablet-width) {
+    position: relative;
+    min-height: 550px;
+    border: 2px solid #e5e5e5;
+    background: none;
+    order: 4;
+    z-index: 1;
+  }
+}
+.achievements__head {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  @media($tablet-width) {
+    display: flex;
+    position: absolute;
+    width: 70%;
+    top: -10px;
+    left: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #ffffff;
+    z-index: 2;
+  }
 }
 .achievements__title {
   margin: 0;
   width: 218px;
   text-align: center;
   @include decoration-title;
+  @media($tablet-width) {
+    width: 100%;
+  }
 }
 .achievements__label {
+  display: flex;
   @include decoration-text;
 }
+.achievements__list {
+  @media($tablet-width) {
+    padding-top: 45px;
+    padding-left: 50px;
+    min-height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .achievements__item {
+  margin-bottom: 40px;
+  @media($tablet-width) {
+    margin: 0;
+  }
 }
 .achievements input[type="checkbox"] {
   display: none;
 }
 .achievements input:checked+label:before {
   display: inline-block;
+  margin-right: 30px;
   content: "";
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   background: $color-white url("../img/icon-yes.svg") no-repeat center;
   border: 2px solid #e5e5e5;
 }
 .achievements input+label:before {
   display: inline-block;
+  margin-right: 30px;
   content: "";
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   background: $color-white;
   border: 2px solid #e5e5e5;
 }

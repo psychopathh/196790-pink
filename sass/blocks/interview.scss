@@ -1,10 +1,61 @@
+.interview {
+  display: flex;
+  min-height: 340px;
+  border: none;
+  background: $color-concrete;
+  @media($tablet-width) {
+    position: relative;
+    margin-bottom: 60px;
+    min-height: 295px;
+    order: 2;
+    background: none;
+    border: 2px solid #e5e5e5;
+    z-index: 1;
+  }
+}
+.interview__head {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-align: center;
+  @media($tablet-width) {
+    position: absolute;
+    top: -10px;
+    right: 149px;
+    left: 132px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: $color-white;
+    z-index: 2;
+  }
+}
 .interview__title {
+  margin: 0;
+  width: 177px;
   font-size: $font-size-title;
   line-height: $font-size-text;
   color: $text-cericered;
   text-transform: uppercase;
+  font-weight: 400;
+  @media($tablet-width) {
+    width: 325px;
+  }
+}
+.interview__list {
+  padding-left: 10px;
+  @media($tablet-width) {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 47px;
+  }
+}
+.interview__item {
+  margin-bottom: 35px;
 }
 .interview__label {
+  display: flex;
   font-size: $font-size-text;
   line-height: $line-height-text;
   color: $color-ebonyclay;
@@ -14,6 +65,7 @@
 }
 .interview input:checked+label:before {
   display: inline-block;
+  margin-right: 30px;
   content: "";
   width: 37px;
   height: 37px;
@@ -23,6 +75,7 @@
 }
 .interview input+label:before {
   display: inline-block;
+  margin-right: 30px;
   content: "";
   width: 37px;
   height: 37px;
