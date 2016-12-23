@@ -6,9 +6,9 @@
     flex-direction: column;
     align-items: center;
     @media($tablet-width) {
-      width: 96%;
+      width: 100%;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     @media($desktop-widths) {
       width: 98.5%;

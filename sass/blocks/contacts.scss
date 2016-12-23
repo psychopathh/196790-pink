@@ -31,6 +31,9 @@
   @include decoration-text;
   font-weight: bold;
   text-align: center;
+  @media($desktop-widths) {
+    padding-bottom: 18px;
+  }
 }
 .contacts__number {
     display: flex;
@@ -81,12 +84,16 @@
     }
 }
 .contacts__communication {
-  @media($tablet-width) {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  @media($tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 542px;
+    align-items: flex-start;
+    width: 88%;
+    margin: 0 auto;
   }
   @media($desktop-widths) {
     display: flex;
@@ -100,5 +107,11 @@
   margin-bottom: 20px;
   @media($desktop-widths) {
     order: 3;
+  }
+}
+.contacts__head {
+  @media($tablet-width) {
+  width: 60%;
+  margin: 0 auto;
   }
 }
