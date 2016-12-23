@@ -3,7 +3,18 @@
   border: none;
   display: flex;
   @media($tablet-width) {
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 44px;
+    padding-left: 54px;
+    padding-right: 31px;
+    margin-bottom: 64px;
+    border: 2px solid #e5e5e5;
     order: 5;
+    z-index: 1;
+  }
+  @media($desktop-widths) {
+    width: 100%;
   }
 }
 .textarea__head {
@@ -12,6 +23,19 @@
   padding-top: 28px;
   padding-bottom: 10px;
   text-align: center;
+  @media($tablet-width) {
+    position: absolute;
+    padding: 0;
+    background: #ffffff;
+    top: -16px;
+    left: 181px;
+    width: 39%;
+    z-index: 2;
+  }
+  @media($desktop-widths) {
+    width: 25%;
+    left: 370px;
+  }
 }
 .textarea__title {
   margin: 0;
@@ -35,4 +59,8 @@
   color: $color-ebonyclay;
   border: 2px solid #e5e5e5;
   border-radius: 3px;
+  @media($desktop-widths) {
+    min-height: 123px;
+    line-height: 23px;
+  }
 }

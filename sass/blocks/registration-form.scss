@@ -9,6 +9,10 @@
   width: 88.5%;
   }
   @media($desktop-widths) {
-    width: 83%;
+    padding-bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }

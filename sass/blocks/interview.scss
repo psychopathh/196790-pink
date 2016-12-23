@@ -12,6 +12,9 @@
     border: 2px solid #e5e5e5;
     z-index: 1;
   }
+  @media($desktop-widths) {
+    width: 48%;
+  }
 }
 .interview__head {
   display: flex;
@@ -28,6 +31,11 @@
     padding-bottom: 0;
     background: $color-white;
     z-index: 2;
+    @media($desktop-widths) {
+      width: 80%;
+      left: 45px;
+      right: 0;
+    }
   }
 }
 .interview__title {
@@ -40,6 +48,9 @@
   font-weight: 400;
   @media($tablet-width) {
     width: 325px;
+  }
+  @media($desktop-widths) {
+    width: 100%;
   }
 }
 .interview__list {

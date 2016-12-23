@@ -10,10 +10,23 @@
     order: 3;
     z-index: 1;
   }
+  @media($desktop-widths) {
+    min-height: 165px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
 .adress__list {
   @media($tablet-width) {
     padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 52px;
+    align-items: flex-start;
+  }
+  @media($desktop-widths) {
+    display: flex;
+    justify-content: space-around;
   }
 }
 .adress__item {
@@ -22,6 +35,7 @@
   align-items: center;
   @media($tablet-width) {
     flex-direction: column-reverse;
+    align-items: baseline;
   }
 }
 .adress__label {
@@ -34,6 +48,11 @@
   text-transform: uppercase;
   @media($tablet-width) {
     padding-bottom: 24px;
+    padding-left: 22px;
+  }
+  @media($desktop-widths) {
+    padding-bottom: 15px;
+    padding-left: 23px;
   }
 }
 .adress__input {
@@ -47,13 +66,16 @@
   @media($tablet-width) {
     width: 437px;
   }
+  @media($desktop-widths) {
+    width: 309px;
+  }
 }
 .adress__head {
   display: none;
   @media($tablet-width) {
     display: flex;
     position: absolute;
-    width: 25%;
+    width: 33%;
     top: -10px;
     left: 212px;
     padding-top: 0;
@@ -61,11 +83,15 @@
     background: #ffffff;
     z-index: 2;
   }
+  @media($desktop-widths) {
+    width: 25%;
+    left: 355px;
+  }
 }
 .adress__title {
   @media($tablet-width) {
   margin: 0;
-  width: 100%px;
+  width: 100%;
   text-align: center;
   @include decoration-title;
   }

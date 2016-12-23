@@ -3,15 +3,23 @@
   min-height: 130px;
   border: none;
   @media($tablet-width) {
+    padding: 0;
+    margin: 0;
     display: flex;
-    width: 97%;
+    width: 100%;
     order: 6;
+  }
+  @media($desktop-widths) {
+    min-height: 65px;
   }
 }
 .send__item {
   padding-bottom: 16px;
   display: flex;
   justify-content: center;
+  @media($desktop-widths) {
+    padding-bottom: 0;
+  }
 }
 .send__span {
   color: $text-cericered;
@@ -38,6 +46,13 @@
   display: flex;
   flex-direction: column;
   @media($tablet-width) {
+  flex-direction: row;
   justify-content: space-between;
+  }
+}
+.send__span-text {
+  display: none;
+  @media($desktop-widths) {
+    display: inline-block;
   }
 }

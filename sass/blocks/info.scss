@@ -6,6 +6,10 @@
   @media($tablet-width) {
     order: 1;
   }
+  @media($desktop-widths) {
+    min-height: 294px;
+    width: 45%;
+  }
 }
 .info__item {
   display: flex;
@@ -17,6 +21,10 @@
     align-items: baseline;
     justify-content: space-around;
   }
+  @media($desktop-widths) {
+    margin-bottom: 0;
+    padding-bottom: 53px;
+  }
 }
 .info__label {
   @include decoration-label;
@@ -26,6 +34,9 @@
   line-height: $line-height-text;
   color: $text-cericered;
   text-transform: uppercase;
+  @media($desktop-widths) {
+    margin-right: 27px;
+  }
 }
 .info__control {
   @include decoration-text;
@@ -37,5 +48,8 @@
   border-radius: 3px;
   @media($tablet-width) {
     width: 520px;
+  }
+  @media($desktop-widths) {
+    width: 100%;
   }
 }
