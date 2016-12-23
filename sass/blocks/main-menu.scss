@@ -43,6 +43,20 @@
   color: $color-white;
   text-decoration: none;
 }
+.main-menu__link:hover {
+  color: $text-cericered;
+}
+.main-menu__link:active {
+  color: $color-white;
+  opacity: 0.3;
+}
+.main-menu__link--active {
+  border-bottom: 2px solid $color-white;
+}
+.main-menu__link--active:hover {
+  color: $text-cericered;
+  border-bottom: 2px solid $text-cericered;
+}
 .main-menu__list {
   padding: 0;
   margin: 0;

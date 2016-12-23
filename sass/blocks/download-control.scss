@@ -12,6 +12,14 @@
     font-size: 21px;
   }
 }
+.download-control__button:hover {
+  background: $color-white;
+  color: $text-cericered;
+}
+.download-control__button:active {
+  background: $color-white;
+  color: lighten($text-cericered, 30%);
+}
 .download-control {
   margin-top: 45px;
   margin-bottom: 47px;
