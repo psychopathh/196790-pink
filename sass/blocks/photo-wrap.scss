@@ -2,29 +2,11 @@
   flex-direction: column;
   display: flex;
   justify-content: space-between;
-  margin-top: -3px;
+  min-height: 145px;
   background-color: $color-concrete;
   margin-bottom: 20px;
   @media($tablet-width) {
     min-height: 155px;
-    margin-bottom: 47px;
-  }
-}
-.photo-wrap--active {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: -3px;
-  width: 87%;
-  @media($tablet-width) {
-    margin-top: -3px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 89%;
-  }
-  @media($desktop-widths) {
-    width: 98%;
+    margin-bottom: 52px;
   }
 }

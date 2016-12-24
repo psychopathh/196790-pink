@@ -10,17 +10,11 @@
     padding-left: 30px;
   }
 }
-.photo__sign--active {
-  @media($tablet-width) {
-  padding-top: 27px;
-  order: 1;
-  }
-}
 .photo__span {
   font-size: 12px;
   line-height: 24px;
-  font-weight: lighter;
-  color: $color-ebonyclay;
+  font-weight: 300;
+  color: lighten($color-ebonyclay, 30%);
   text-transform: uppercase;
 }
 .photo__text {
@@ -49,28 +43,6 @@
     background: url("../img/icon-heart.svg") no-repeat 254px 6px;
   }
 }
-.photo__like--active {
-  @media($tablet-width) {
-  margin-top: 24px;
-  padding-bottom: 0;
-  order: 2;
-  width: 195px;
-  background: url("../img/icon-heart.svg") no-repeat 155px 5px;
-  }
-  @media($desktop-widths) {
-    padding-left: 52px;
-  }
-}
-.photo__text--active {
-  @media($tablet-width) {
-  margin-bottom: 12px;
-  order: 3;
-  width: 545px;
-  }
-  @media($desktop-widths) {
-    width: 100%;
-  }
-}
 .photo__img {
   width: 100%;
   height: auto;
@@ -86,10 +58,6 @@
   @media($desktop-widths) {
     width: 32%;
   }
-}
-.photo__item--active {
-  position: relative;
-  width: 100%;
 }
 .photo__words {
   position: absolute;

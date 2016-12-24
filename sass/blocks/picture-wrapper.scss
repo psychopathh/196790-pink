@@ -1,0 +1,10 @@
+.picture-wrapper {
+  margin: 0;
+  height: 180px;
+  @media($tablet-width) {
+    height: 300px;
+  }
+  @media($desktop-widths) {
+    height: 400px;
+  }
+}
