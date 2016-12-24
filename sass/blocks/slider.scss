@@ -1,14 +1,30 @@
-.slider__items {
-  margin-bottom: 122px;
-}
-input.slider__input {
+.slider__list input[type="radio"] {
   display: none;
 }
-input.slider__input:before {
+.slider__label {
+  font-size: 0;
+}
+.slider__list input:checked+label:before {
+  display: inline-block;
   content: "";
   width: 12px;
   height: 12px;
-  font-size: 20px;
-  line-height: 10px;
-  border: 1px solid black;
+  background: $color-white;
+  border: 3px solid $color-black;
+  border-radius: 50px;
+}
+.slider__list input+label:before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #bec2c7;
+  border: 3px solid $color-white;
+  border-radius: 50px;
+}
+.slider__list {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    margin: 0 auto;
 }

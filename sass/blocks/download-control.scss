@@ -1,5 +1,15 @@
+.download-control {
+  padding-bottom: 47px;
+  padding-top: 47px;
+  @media($tablet-width) {
+    padding-bottom: 60px;
+  }
+  @media($desktop-widths) {
+    padding-bottom: 85px;
+  }
+}
 .download-control__button {
-  padding: 12px 35px;
+  padding: 14px 38px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -8,8 +18,7 @@
   border: 3px solid $color-white;
   border-radius: 50px;
   @media($tablet-width) {
-    padding: 12px 30px;
-    font-size: 21px;
+    padding: 13px 46px;
   }
 }
 .download-control__button:hover {
@@ -19,16 +28,4 @@
 .download-control__button:active {
   background: $color-white;
   color: lighten($text-cericered, 30%);
-}
-.download-control {
-  margin-top: 45px;
-  margin-bottom: 47px;
-  @media($tablet-width) {
-    margin-left: 37px;
-    margin-bottom: 55px;
-  }
-  @media($desktop-widths) {
-    margin-left: 130px;
-    margin-bottom: 75px;
-  }
 }

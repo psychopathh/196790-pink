@@ -1,15 +1,15 @@
 .download-list {
-  margin-bottom: 25px;
+  padding-bottom: 6px;
   display: flex;
   justify-content: space-between;
   width: 203px;
   text-align: center;
   font-size: 0;
   @media($tablet-width) {
-    margin-left: 82px;
+    padding-bottom: 18px;
   }
   @media($desktop-widths) {
-    margin-left: 175px;
+    padding-bottom: 35px;
   }
 }
 .download-list__system--ios {

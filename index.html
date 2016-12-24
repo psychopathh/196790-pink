@@ -26,8 +26,8 @@
         </div>
         <nav class="main-menu__nav">
           <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="photo.html">Фотографии</a></li>
+            <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
@@ -51,10 +51,10 @@
   <main>
     <section class="download">
       <div class="wrapper">
-        <div class="download__head">
-          <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-        </div>
         <div class="download__items">
+          <div class="download__head">
+            <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+          </div>
           <div class="download-control">
             <a class="download-control__button" href="#">Скачать приложение</a>
           </div>
@@ -107,6 +107,11 @@
             </div>
           </div>
           <div class="description__picture description__picture--active">
+            <picture>
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@2x.png 2x, img/iphone-screen-3-tablet@1x.png 1x">
+                <source srcset="img/iphone-screen-mobile@2x.png 2x, img/iphone-screen-mobile@1x.png 1x">
+                <img class="description__img description__img--active" width="160" height="280" src="img/iphone-screen-mobile@1x.png" alt="телефон">
+              </picture>
           </div>
         </div>
       </div>
@@ -132,15 +137,30 @@
         <div class="slider">
           <ul class="reviews__list">
             <li class="reviews__item slider__item">
-              <p class="reviews__head">Николай Петров</p>
-              <p class="reviews__sign">25 лет, водитель трамвая</p>
-              <blockquote class="reviews__blockquote"><p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p></blockquote>
+              <blockquote class="quote">
+                <p class="quote__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <footer class="quote__footer">
+                  <p class="quote__description">
+                    <cite class="quote__author">Николай Петров</cite>
+                  </p>
+                    <p class="quote__author-info">25 лет, водитель трамвая</p>
+                </footer>
+              </blockquote>
             </li>
           </ul>
-          <div class="slider__items">
-            <input class="slider__input" type="radio" name="reviews" checked>
-            <input class="slider__input" type="radio" name="reviews">
-            <input class="slider__input" type="radio" name="reviews">
+          <div class="slider__list">
+            <div class="slider__item">
+              <label class="slider__label" for="toggle">Переключатель</label>
+              <input class="slider__input" type="radio" id="toggle" name="reviews" checked>
+            </div>
+            <div class="slider__item">
+              <label class="slider__label" for="toggle">Переключатель</label>
+              <input class="slider__input" type="radio" id="toggle" name="reviews">
+            </div>
+            <div class="slider__item">
+              <label class="slider__label" for="toggle">Переключатель</label>
+              <input class="slider__input" type="radio" id="toggle" name="reviews">
+            </div>
           </div>
         </div>
       </div>
@@ -170,17 +190,17 @@
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         </div>
         <div class="contacts__communication">
-          <div class="contacts__phone">
+          <div class="contacts__item">
             <p class="contacts__text">Звоните:</p>
-            <a class="contacts__number" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+            <a class="contacts__info" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
           </div>
-          <div class="contacts__email">
+          <div class="contacts__item">
             <p class="contacts__text">Пишите:</p>
-            <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="contacts__direction">
+          <div class="contacts__item">
             <p class="contacts__text">Приезжайте в гости:</p>
-            <a class="contacts__address" href="#">ул.Большая Конюшенная, 19/8</a>
+            <a class="contacts__info" href="#">ул.Большая Конюшенная, 19/8</a>
           </div>
         </div>
       </div>

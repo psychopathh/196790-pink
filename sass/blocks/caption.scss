@@ -1,24 +1,34 @@
 .caption {
   display: flex;
-  margin-bottom: 100px;
+  text-align: center;
+  background-color: #ffffff;
+  @media($tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 32px;
+  }
+  @media($desktop-widths) {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
 }
 .caption__title {
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin: 0;
   font-size: 24px;
-  width: 100%;
-  text-align: center;
-  font-weight: lighter;
+  font-weight: 300;
   color: $color-ebonyclay;
   @media($tablet-width) {
-    align-self: center;
     font-size: 40px;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 0;
   }
   @media($desktop-widths) {
     font-size: 50px;
-    margin-top: 70px;
+  }
+}
+.caption__title:nth-child(2) {
+  @media($tablet-width) {
+    width: 335px;
+    margin: 0 auto;
+  }
+  @media($desktop-widths) {
+    width: 435px;
   }
 }
