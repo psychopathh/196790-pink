@@ -1,0 +1,12 @@
+.table-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media($tablet-width) {
+    width: 94%;
+    margin: 0 auto;
+  }
+  @media($desktop-widths) {
+    width: 98%;
+  }
+}
