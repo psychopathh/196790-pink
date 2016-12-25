@@ -5,4 +5,8 @@
     padding-top: 6px;
     padding-bottom: 40px;
   }
+  @media($desktop-widths) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

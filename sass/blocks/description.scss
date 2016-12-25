@@ -46,6 +46,7 @@
     margin-top: 68px;
   }
   @media($desktop-widths) {
+    padding-bottom: 25px;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-around;
