@@ -1,6 +1,37 @@
 .contacts-location {
-  background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+  height: 200px;
+  background: url(../img/bg-map-mobile@1x.jpg) no-repeat, url(../img/bg-map-mobile@2x.jpg) no-repeat;
+  background-size: cover;
+  @media($tablet-width) {
+    height: 380px;
+    background: url(../img/bg-map-tablet@1x.jpg) no-repeat;
+    background-size: cover;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url(../img/bg-map-tablet@2x.jpg) no-repeat;
+    }
+  }
+  @media($desktop-widths) {
+    height: 500px;
+    background-size: cover;
+    background: url(../img/bg-map-desktop@1x.jpg) no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url(../img/bg-map-desktop@2x.jpg) no-repeat;
+    }
+  }
 }
-.contacts-location__img {
+.contacts-location:after {
+  display: block;
+  content: "";
+  height: 70px;
   width: 100%;
+  background: url(../img/bg-triangle-white-footer.svg) no-repeat 50% 0px;
+  @media($tablet-width) {
+    height: 99px;
+    background-size: cover;
+  }
+  @media($desktop-widths) {
+    height: 123px;
+    background: url(../img/bg-triangle-white-footer.svg) no-repeat 50% -1px;
+    background-size: cover;
+  }
 }

@@ -1,6 +1,23 @@
 .slider__list input[type="radio"] {
   display: none;
 }
+.slider__list {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  margin: 0 auto;
+  @media($tablet-width) {
+    width: 10%;
+  }
+}
+.slider__list--invisible {
+  @media($tablet-width) {
+    display: none;
+  }
+  @media($desktop-widths) {
+    display: none;
+  }
+}
 .slider__label {
   font-size: 0;
 }
@@ -22,9 +39,4 @@
   border: 3px solid $color-white;
   border-radius: 50px;
 }
-.slider__list {
-    display: flex;
-    width: 20%;
-    justify-content: space-around;
-    margin: 0 auto;
-}
+

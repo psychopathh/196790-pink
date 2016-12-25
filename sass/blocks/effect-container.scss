@@ -2,5 +2,7 @@
   @media($tablet-width) {
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 6px;
+    padding-bottom: 40px;
   }
 }

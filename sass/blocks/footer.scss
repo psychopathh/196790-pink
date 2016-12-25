@@ -3,42 +3,13 @@
   display: none;
   }
 }
-.footer__logotype {
-  margin-top: 24px;
-  margin-bottom: 38px;
-  @media($tablet-width) {
-    margin-top: 34px;
-    margin-bottom: 42px;
-  }
-  @media($desktop-widths) {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    margin-right: 115px;
-  }
-}
 .footer__socials {
     display: flex;
-    margin-bottom: 30px;
-  @media($tablet-width) {
-    margin-top: 34px;
-    margin-bottom: 47px;
-    margin-right: 15px;
-  }
-  @media($desktop-widths) {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    margin-right: 115px;
-  }
 }
 .footer__sign {
   display: flex;
   @media($tablet-width) {
     display: flex;
-    margin-top: 34px;
-  }
-  @media($desktop-widths) {
-    margin-top: 70px;
-    margin-bottom: 70px;
   }
 }
 .footer__button {
@@ -83,8 +54,8 @@
   @media($tablet-width) {
     display: block;
     font-size: 0;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     background: url("../img/htmlacademy.svg") no-repeat;
   }
   @media($desktop-widths) {
@@ -92,17 +63,11 @@
   }
 }
 .footer__text {
-  margin-right: 10px;
-  margin-bottom: 50px;
   font-size: $font-size-title;
   line-height: $line-height-title;
   color: $color-ebonyclay;
-  @media($tablet-width) {
-  margin-right: 10px;
-  }
   @media($desktop-widths) {
     font-size: 18px;
     margin: 0;
-    margin-right: 8px;
   }
 }

@@ -7,26 +7,6 @@
   @media($tablet-width) {
   }
 }
-.quote {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 10px;
-  margin: 0;
-}
-.quote__author {
-  margin: 0;
-  padding-bottom: 10px;
-  font-size: $font-size-text;
-  line-height: $line-height-text;
-  font-weight: bold;
-  color: $color-black;
-  font-style: normal;
-  order: 1;
-}
-.quote__text {
-  margin: 0;
-  order: 2;
-}
 .reviews__item {
   list-style: none;
     @media($tablet-width) {
@@ -38,16 +18,4 @@
 }
 .reviews__list {
   padding: 0;
-}
-.quote__author-info {
-  display: none;
-  @media($tablet-width) {
-    display: block;
-    margin: 0;
-    padding: 0;
-    order: 1;
-  }
-  @media($desktop-widths) {
-    font-size: 30px;
-  }
 }

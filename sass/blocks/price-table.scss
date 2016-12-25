@@ -93,4 +93,7 @@
 }
 .price-table__title.hit {
   background: $color-ebonyclay url("../img/bg-hit.svg") no-repeat;
+  @media($tablet-width) {
+    background: $color-ebonyclay url("../img/bg-hit.svg") no-repeat -14px 0;
+  }
 }

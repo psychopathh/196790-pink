@@ -69,19 +69,16 @@
   width: 240px;
   margin-bottom: 28px;
   text-align: center;
+  font-weight: 300;
   @media($tablet-width) {
     width: 367px;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 42px;
-    font-weight: 300;
-    text-align: center;
   }
   @media($desktop-widths) {
     width: 295px;
     margin-bottom: 57px;
     font-size: 18px;
-    font-weight: 300;
-    text-align: center;
   }
 }

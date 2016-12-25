@@ -6,9 +6,10 @@
   margin-bottom: 29px;
   @include title;
   @media($tablet-width) {
+    margin: 0;
+    padding: 47px 0;
     font-size: 40px;
     width: 370px;
-    margin-bottom: 50px;
   }
   @media($desktop-widths) {
     width: 470px;
@@ -18,7 +19,6 @@
 }
 .contacts__item {
   margin-bottom: 20px;
-  width: 66%;
   font-weight: 300;
   font-size: 24px;
   text-decoration: none;
@@ -26,6 +26,12 @@
   color: $text-cericered;
   @media($tablet-width) {
     margin-bottom: 30px;
+    width: 37%;
+  }
+}
+.contacts__item:nth-child(3) {
+  width: 225px;
+  @media($tablet-width) {
     width: 37%;
   }
 }
@@ -68,8 +74,9 @@
   }
 }
 .contacts__head {
-  width: 66%;
   margin: 0 auto;
+  padding-top: 27px;
+  width: 100%;
   @media($tablet-width) {
   width: 48%;
   margin: 0 auto;

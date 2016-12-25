@@ -9,8 +9,7 @@
       width: 100%;
       flex-direction: row;
       justify-content: space-around;
-    }
-    @media($desktop-widths) {
-      width: 98.5%;
+      padding-top: 30px;
+      padding-bottom: 45px;
     }
 }

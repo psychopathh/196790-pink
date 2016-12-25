@@ -22,6 +22,9 @@
   width: 43px;
   height: 48px;
   background: url("../img/logo-android.svg") no-repeat;
+  @media($tablet-width) {
+    opacity: 0.3;
+  }
 }
 .download-list__system--windows {
   margin-top: 10px;
