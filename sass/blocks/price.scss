@@ -5,6 +5,10 @@
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
+  @media($desktop-widths) {
+    padding-top: 165px;
+    padding-bottom: 98px;
+  }
 }
 .price__list {
   display: flex;

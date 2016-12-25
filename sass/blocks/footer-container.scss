@@ -12,4 +12,9 @@
       padding-top: 30px;
       padding-bottom: 45px;
     }
+    @media($desktop-widths) {
+      padding-top: 65px;
+      padding-bottom: 65px;
+      justify-content: space-between;
+    }
 }

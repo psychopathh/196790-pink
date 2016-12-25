@@ -66,6 +66,9 @@
   font-size: $font-size-title;
   line-height: $line-height-title;
   color: $color-ebonyclay;
+  @media($tablet-width) {
+    padding-right: 10px;
+  }
   @media($desktop-widths) {
     font-size: 18px;
     margin: 0;
