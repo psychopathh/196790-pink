@@ -4,8 +4,10 @@
 .slider__list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 25%;
   margin: 0 auto;
+  line-height: 0px;
   @media($tablet-width) {
     width: 10%;
   }
@@ -21,7 +23,7 @@
 .slider__label {
   font-size: 0;
 }
-.slider__list input:checked+label:before {
+.slider__list input:checked+label {
   display: inline-block;
   content: "";
   width: 12px;
@@ -30,14 +32,19 @@
   border: 3px solid $color-black;
   border-radius: 50px;
 }
-.slider__list input+label:before {
+.slider__list input+label {
   display: inline-block;
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 7px;
+  height: 7px;
   background: #bec2c7;
-  border: 3px solid $color-white;
   border-radius: 50px;
+}
+.slider__list input+label:hover {
+  background: #7e868f;
+}
+.slider__list input+label:active {
+  background: #e9ebec;
 }
 .slider__list--invis {
   @media($desktop-widths) {

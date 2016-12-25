@@ -1,5 +1,5 @@
 .info {
-  min-height: 375px;
+  min-height: 355px;
   display: flex;
   padding: 0;
   border: none;
@@ -19,7 +19,7 @@
     margin-bottom: 50px;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   @media($desktop-widths) {
     margin-bottom: 0;
@@ -52,4 +52,10 @@
   @media($desktop-widths) {
     width: 100%;
   }
+}
+.info__control:hover {
+  border: 2px solid $color-ebonyclay;
+}
+.info__control:active {
+  border: 2px solid $text-cericered;
 }

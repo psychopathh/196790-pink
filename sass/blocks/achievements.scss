@@ -23,15 +23,9 @@
   padding-top: 36px;
   padding-bottom: 36px;
   @media($tablet-width) {
-    display: flex;
-    position: absolute;
-    width: 70%;
-    top: -10px;
-    left: 100px;
-    padding-top: 0;
-    padding-bottom: 0;
+    width: 416px;
     background: #ffffff;
-    z-index: 2;
+    margin: -53px auto;
   }
   @media($desktop-widths) {
     width: 45%;
@@ -52,9 +46,10 @@
   @include decoration-text;
 }
 .achievements__list {
+    padding-left: 5px;
   @media($tablet-width) {
-    padding-top: 45px;
-    padding-left: 50px;
+    padding-left: 35px;
+    padding-top: 58px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

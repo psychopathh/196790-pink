@@ -38,6 +38,8 @@
   padding-top: 47px;
   padding-bottom: 27px;
   @media($tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 15px;
     width: 490px;
   }
   @media($desktop-widths) {

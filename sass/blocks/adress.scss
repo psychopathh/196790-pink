@@ -27,6 +27,7 @@
   @media($desktop-widths) {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
   }
 }
 .adress__item {
@@ -70,22 +71,23 @@
     width: 309px;
   }
 }
+.adress__input:hover {
+  border: 2px solid $color-ebonyclay;
+}
+.adress__input:active {
+  border: 2px solid $text-cericered;
+}
 .adress__head {
   display: none;
   @media($tablet-width) {
-    display: flex;
-    position: absolute;
-    width: 33%;
-    top: -10px;
-    left: 212px;
-    padding-top: 0;
-    padding-bottom: 0;
+    display: block;
     background: #ffffff;
-    z-index: 2;
+    width: 225px;
+    display: block;
+    margin: -9px auto;
   }
   @media($desktop-widths) {
     width: 25%;
-    left: 355px;
   }
 }
 .adress__title {
@@ -110,5 +112,35 @@
     height: 62px;
     background: url("../img/icon-phone.svg") no-repeat center;
     background-color: #e5e5e5;
+  }
+}
+.adress__item--number:before {
+  @media($tablet-width) {
+    position: relative;
+    content: "";
+    width: 62px;
+    height: 59px;
+    background: #e5e5e5 url(../img/icon-phone.svg) no-repeat center;
+    top: -127px;
+    left: 373px;
+  }
+  @media($desktop-widths) {
+    top: -118px;
+    left: 245px;
+  }
+}
+.adress__item--mail:before {
+  @media($tablet-width) {
+    position: relative;
+    content: "";
+    width: 62px;
+    height: 59px;
+    background: #e5e5e5 url(../img/icon-mail.svg) no-repeat center;
+    top: -127px;
+    left: 373px;
+  }
+  @media($desktop-widths) {
+    top: -118px;
+    left: 245px;
   }
 }

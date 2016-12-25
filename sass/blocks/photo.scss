@@ -1,3 +1,6 @@
+.photo {
+  position: relative;
+}
 .photo__sign {
   margin: 0;
   padding-left: 17px;
@@ -26,7 +29,6 @@
   color: $color-ebonyclay;
   @media($tablet-width) {
     padding-left: 30px;
-    width: 250px;
   }
 }
 .photo__like {
@@ -51,14 +53,6 @@
   width: 100%;
   height: auto;
 }
-.photo__item {
-  @media($tablet-width) {
-    width: 48%;
-  }
-  @media($desktop-widths) {
-    width: 32%;
-  }
-}
 .photo__words {
   position: absolute;
   padding-top: 11px;
@@ -72,4 +66,9 @@
   color: $color-white;
   right: 20px;
   top: -12px;
+}
+.photo__item {
+  @media($tablet-width) {
+    width: 32%;
+  }
 }

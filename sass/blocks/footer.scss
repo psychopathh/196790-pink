@@ -4,11 +4,17 @@
   }
 }
 .footer__socials {
-    display: flex;
+  display: flex;
+  padding-bottom: 30px;
+  @media($tablet-width) {
+    padding-bottom: 0px;
+  }
 }
 .footer__sign {
+  padding-bottom: 40px;
   display: flex;
   @media($tablet-width) {
+    padding-bottom: 0;
     display: flex;
   }
 }
@@ -27,6 +33,9 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
 }
+.footer__button--twitter:hover {
+   border: 3px solid #283645;
+}
 .footer__button--facebook {
   display: block;
   margin-right: 10px;
@@ -36,6 +45,9 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
 }
+.footer__button--facebook:hover {
+   border: 3px solid #283645;
+}
 .footer__button--play {
   display: block;
   width: 50px;
@@ -43,6 +55,9 @@
   background: url(../img/icon-youtube.svg) no-repeat center;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+}
+.footer__button--play:hover {
+   border: 3px solid #283645;
 }
 .footer__logoacademy {
   display: block;
@@ -72,5 +87,13 @@
   @media($desktop-widths) {
     font-size: 18px;
     margin: 0;
+  }
+}
+.footer__logotype {
+  padding-top: 25px;
+  padding-bottom: 41px;
+  @media($tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }

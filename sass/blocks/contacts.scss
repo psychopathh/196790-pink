@@ -57,6 +57,14 @@
     color: $text-cericered;
   }
 }
+.contacts__info:hover {
+  color: $color-ebonyclay;
+  text-decoration: underline;
+}
+.contacts__info:active {
+  text-decoration: none;
+  color: lighten($color-ebonyclay, 70%);
+}
 .contacts__communication {
   display: flex;
   flex-direction: column;

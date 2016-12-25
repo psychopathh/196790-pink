@@ -23,14 +23,9 @@
   padding-bottom: 36px;
   text-align: center;
   @media($tablet-width) {
-    position: absolute;
-    top: -10px;
-    right: 149px;
-    left: 132px;
-    padding-top: 0;
-    padding-bottom: 0;
-    background: $color-white;
-    z-index: 2;
+    background: #ffffff;
+    width: 350px;
+    margin: -52px auto;
     @media($desktop-widths) {
       width: 80%;
       left: 45px;
@@ -58,7 +53,7 @@
   @media($tablet-width) {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 62px;
   padding-left: 47px;
   }
 }
