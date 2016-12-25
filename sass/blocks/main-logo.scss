@@ -1,11 +1,13 @@
 .main-logo {
-  margin-top: 45px;
   padding-left: 25px;
   @media($tablet-width) {
     margin-top: 24px;
   }
   @media($desktop-widths) {
-    margin-right: 99px;
+    padding-top: 2px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    margin: 0;
     display: block;
   }
 }
