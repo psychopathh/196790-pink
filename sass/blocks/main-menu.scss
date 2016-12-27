@@ -52,8 +52,12 @@
   color: $text-cericered;
 }
 .main-menu__link:active {
+  color: $text-cericered;
+  opacity: 0.3;
+  @media($desktop-widths) {
   color: $color-white;
   opacity: 0.3;
+  }
 }
 .main-menu__link--active {
   border-bottom: 2px solid $color-white;
@@ -79,7 +83,7 @@
   @media($tablet-width) {
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 32px;
+    padding-bottom: 25px;
   }
   @media($desktop-widths) {
     padding-bottom: 0;

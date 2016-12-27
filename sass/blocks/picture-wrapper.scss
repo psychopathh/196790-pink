@@ -1,8 +1,10 @@
 .picture-wrapper {
-  margin: 0;
+  margin: 0 auto;
   height: 180px;
+  width: 280px;
   @media($tablet-width) {
     height: 300px;
+    width: 300px;
   }
   @media($desktop-widths) {
     height: 400px;

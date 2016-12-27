@@ -54,6 +54,7 @@
   width: 97%;
   resize: none;
   font-size: $font-size-text;
+  outline: none;
   line-height: $line-height-text;
   color: $color-ebonyclay;
   border: 2px solid #e5e5e5;
@@ -62,4 +63,10 @@
     min-height: 123px;
     line-height: 23px;
   }
+}
+.textarea__content:hover {
+  border: 2px solid $color-ebonyclay;
+}
+.textarea__content:active {
+  border: 2px solid $text-cericered;
 }

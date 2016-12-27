@@ -24,6 +24,7 @@
   margin: 0;
   padding-left: 17px;
   padding-bottom: 10px;
+  padding-right: 16px;
   font-size: 14px;
   line-height: 24px;
   color: $color-ebonyclay;
@@ -33,16 +34,15 @@
 }
 .photo__like {
   margin: 0;
-  padding-left: 47px;
-  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-bottom: 13px;
   font-size: 12px;
   line-height: 24px;
-  color: $text-cericered;
+  color: #d22856;
   text-transform: uppercase;
-  background: url("../img/icon-heart.svg") no-repeat 17px 6px;
   @media($tablet-width) {
     padding-left: 29px;
-    background: url("../img/icon-heart.svg") no-repeat 254px 6px;
+    padding-bottom: 18px;
   }
 }
 .photo__img {
@@ -69,6 +69,21 @@
 }
 .photo__item {
   @media($tablet-width) {
-    width: 32%;
+    width: 300px;
+  }
+}
+.photo__like-wrapper {
+  display: flex;
+  align-items: baseline;
+  @media($tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.photo__heart {
+  padding-left: 17px;
+  height: 17px;
+  @media($tablet-width) {
+    padding-right: 34px;
   }
 }

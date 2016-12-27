@@ -1,6 +1,18 @@
 .main-close {
   padding-right: 20px;
+  @media($tablet-width) {
+    padding-top: 28px;
+  }
   @media($desktop-widths) {
     display: none;
   }
+}
+.main-close__svg {
+  fill: $color-white;
+}
+.main-close__svg:hover {
+  fill: $text-cericered;
+}
+.main-close__svg:active {
+  fill: lighten($text-cericered, 30%);
 }

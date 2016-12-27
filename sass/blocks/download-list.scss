@@ -25,6 +25,9 @@
   @media($tablet-width) {
     opacity: 0.3;
   }
+  @media($desktop-widths) {
+    opacity: 1;
+  }
 }
 .download-list__system--windows {
   margin-top: 10px;
