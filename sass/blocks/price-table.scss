@@ -48,6 +48,7 @@
   @media($tablet-width) {
     padding-top: 9px;
     font-size: 16px;
+
     position: relative;
     min-height: 79px;
   }
@@ -73,8 +74,8 @@
   text-transform: uppercase;
   @media($tablet-width) {
     display: none;
-    padding-left: 12px;
     font-weight: 400;
+    text-transform: none;
   }
   @media($desktop-widths) {
     font-size: 18px;
